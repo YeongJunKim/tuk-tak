@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "neopixel.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -95,7 +95,13 @@ int main(void)
   MX_DMA_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
-
+  neopixel_init(1);
+  neopixel_begin();
+  neopixel_SetColor(1, 255, 255, 255, 0);
+  neopixel_SetColor(1, 255, 255, 0, 0);
+  uint8_t i = 100;
+  uint8_t j = 200;
+  uint8_t k = 50;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -106,7 +112,9 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_12);
-	  HAL_Delay(100);
+	  HAL_Delay(1000);
+	  neopixel_SetColor(1, i++, j++, k++, 0);
+	  neopixel_begin();
   }
   /* USER CODE END 3 */
 }
@@ -170,7 +178,7 @@ static void MX_TIM1_Init(void)
   htim1.Instance = TIM1;
   htim1.Init.Prescaler = 0;
   htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim1.Init.Period = 0;
+  htim1.Init.Period = 93;
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim1.Init.RepetitionCounter = 0;
   htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
