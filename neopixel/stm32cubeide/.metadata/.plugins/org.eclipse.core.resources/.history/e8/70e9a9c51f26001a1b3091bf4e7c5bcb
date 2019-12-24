@@ -1,0 +1,18 @@
+/*
+ * Neopixel.cpp
+ *
+ *  Created on: Dec 24, 2019
+ *      Author: colson
+ */
+
+#include "Neopixel.h"
+
+Neopixel::Neopixel() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Neopixel::~Neopixel() {
+	// TODO Auto-generated destructor stub
+}
+

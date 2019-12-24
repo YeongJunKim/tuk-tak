@@ -2030,3 +2030,962 @@
 2019-12-23 22:02:12,235 [INFO] ProjectBuilder:2161 - Time for Generating toolchain IDE Files: 1219mS.
 2019-12-23 22:02:12,241 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 0mS.
 2019-12-23 22:02:12,244 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 0mS.
+2019-12-24 16:21:12,275 [INFO] Activator:176 - 
+
+
+2019-12-24 16:21:12,279 [INFO] Activator:177 - !SESSION log4j initialized
+2019-12-24 16:21:50,793 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926
+2019-12-24 16:21:50,809 [INFO] DbMcusXml:68 - Set database path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/mcu/
+2019-12-24 16:21:50,813 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/boardmanager/
+2019-12-24 16:21:50,814 [INFO] DbMcus:262 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/mcufinder/images/
+2019-12-24 16:21:50,814 [INFO] DbBoards:225 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/mcufinder/images/
+2019-12-24 16:21:50,816 [INFO] APIGFXSelector:72 - Set database path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/mcufinder/mcu/
+2019-12-24 16:21:50,833 [INFO] DbMcusAds:72 - Set database path to: C:\Users\colson\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-24 16:21:50,834 [INFO] DbMcusDocs:90 - Set database path to: C:\Users\colson\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-24 16:21:50,836 [INFO] DbMcusJson:59 - Set database path to: C:\Users\colson\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-24 16:21:50,836 [INFO] DbBoardsDocs:82 - Set database path to: C:\Users\colson\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-24 16:21:50,837 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\colson\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-24 16:21:51,136 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\colson\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-12-24 16:21:51,270 [INFO] RulesReader:52 - Compatibility file has been processed (156 Rules)
+2019-12-24 16:21:51,376 [INFO] MicroXplorer:521 - Detected Java Version = 1.8.0_202
+2019-12-24 16:21:51,377 [INFO] DbMcusXml:68 - Set database path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/mcu/
+2019-12-24 16:21:51,377 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/boardmanager/
+2019-12-24 16:21:51,378 [INFO] DbMcus:262 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/mcufinder/images/
+2019-12-24 16:21:51,379 [INFO] DbBoards:225 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/mcufinder/images/
+2019-12-24 16:21:51,379 [INFO] APIGFXSelector:72 - Set database path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/mcufinder/mcu/
+2019-12-24 16:21:51,379 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\colson\.stmcufinder\plugins\mcufinder/ => C:\Users\colson\.stmcufinder\plugins\mcufinder
+2019-12-24 16:21:51,379 [INFO] DbMcusAds:72 - Set database path to: C:\Users\colson\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-24 16:21:51,380 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\colson\.stmcufinder\plugins\mcufinder/ => C:\Users\colson\.stmcufinder\plugins\mcufinder
+2019-12-24 16:21:51,380 [INFO] DbMcusDocs:90 - Set database path to: C:\Users\colson\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-24 16:21:51,380 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\colson\.stmcufinder\plugins\mcufinder/ => C:\Users\colson\.stmcufinder\plugins\mcufinder
+2019-12-24 16:21:51,381 [INFO] DbMcusJson:59 - Set database path to: C:\Users\colson\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-24 16:21:51,381 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\colson\.stmcufinder\plugins\mcufinder/ => C:\Users\colson\.stmcufinder\plugins\mcufinder
+2019-12-24 16:21:51,381 [INFO] DbBoardsDocs:82 - Set database path to: C:\Users\colson\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-24 16:21:51,382 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\colson\.stmcufinder\plugins\mcufinder/ => C:\Users\colson\.stmcufinder\plugins\mcufinder
+2019-12-24 16:21:51,382 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\colson\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-24 16:21:51,382 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\colson\.stmcufinder\plugins\mcufinder/ => C:\Users\colson\.stmcufinder\plugins\mcufinder
+2019-12-24 16:21:51,382 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\colson\.stmcufinder\plugins\mcufinder/ => C:\Users\colson\.stmcufinder\plugins\mcufinder
+2019-12-24 16:21:51,383 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\colson\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-12-24 16:21:51,457 [INFO] MainPanel:211 - HeapMemory: 318767104
+2019-12-24 16:21:51,545 [INFO] DbMcusXml:68 - Set database path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/mcu/
+2019-12-24 16:21:51,546 [INFO] DbBoardsPdsc:54 - Set plugin database path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/boardmanager/
+2019-12-24 16:21:51,546 [INFO] DbMcus:262 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/mcufinder/images/
+2019-12-24 16:21:51,547 [INFO] DbBoards:225 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/mcufinder/images/
+2019-12-24 16:21:51,547 [INFO] APIGFXSelector:72 - Set database path to: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/plugins/mcufinder/mcu/
+2019-12-24 16:21:51,548 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\colson\.stmcufinder\plugins\mcufinder/ => C:\Users\colson\.stmcufinder\plugins\mcufinder
+2019-12-24 16:21:51,548 [INFO] DbMcusAds:72 - Set database path to: C:\Users\colson\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-24 16:21:51,548 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\colson\.stmcufinder\plugins\mcufinder/ => C:\Users\colson\.stmcufinder\plugins\mcufinder
+2019-12-24 16:21:51,549 [INFO] DbMcusDocs:90 - Set database path to: C:\Users\colson\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-24 16:21:51,549 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\colson\.stmcufinder\plugins\mcufinder/ => C:\Users\colson\.stmcufinder\plugins\mcufinder
+2019-12-24 16:21:51,549 [INFO] DbMcusJson:59 - Set database path to: C:\Users\colson\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-24 16:21:51,550 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\colson\.stmcufinder\plugins\mcufinder/ => C:\Users\colson\.stmcufinder\plugins\mcufinder
+2019-12-24 16:21:51,550 [INFO] DbBoardsDocs:82 - Set database path to: C:\Users\colson\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-24 16:21:51,550 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\colson\.stmcufinder\plugins\mcufinder/ => C:\Users\colson\.stmcufinder\plugins\mcufinder
+2019-12-24 16:21:51,550 [INFO] DbBoardsJson:51 - Set database path to: C:\Users\colson\.stmcufinder\plugins\mcufinder//mcu/
+2019-12-24 16:21:51,551 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\colson\.stmcufinder\plugins\mcufinder/ => C:\Users\colson\.stmcufinder\plugins\mcufinder
+2019-12-24 16:21:51,551 [WARN] DbFile:31 - Overriding database path with different value: C:\Users\colson\.stmcufinder\plugins\mcufinder/ => C:\Users\colson\.stmcufinder\plugins\mcufinder
+2019-12-24 16:21:51,551 [INFO] CrossReferenceDbSqlite:197 - Set database path to: C:\Users\colson\.stmcufinder\plugins\mcufinder//mcu/cs/
+2019-12-24 16:21:51,570 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926
+2019-12-24 16:21:51,572 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=]
+2019-12-24 16:21:51,574 [INFO] PluginManage:292 - Check plugin analytics
+2019-12-24 16:21:51,592 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2019-12-24 16:21:51,592 [INFO] PluginManage:292 - Check plugin clock
+2019-12-24 16:21:51,609 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2019-12-24 16:21:51,609 [INFO] PluginManage:292 - Check plugin ddr
+2019-12-24 16:21:51,623 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2019-12-24 16:21:51,624 [INFO] PluginManage:292 - Check plugin filemanager
+2019-12-24 16:21:51,733 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2019-12-24 16:21:51,733 [INFO] PluginManage:292 - Check plugin ipmanager
+2019-12-24 16:21:51,750 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2019-12-24 16:21:51,751 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2019-12-24 16:21:51,766 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2019-12-24 16:21:51,766 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2019-12-24 16:21:51,793 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2019-12-24 16:21:51,794 [INFO] PluginManage:292 - Check plugin power
+2019-12-24 16:21:51,801 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2019-12-24 16:21:51,801 [INFO] PluginManage:292 - Check plugin projectmanager
+2019-12-24 16:21:51,813 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2019-12-24 16:21:51,813 [INFO] PluginManage:292 - Check plugin thirdparty
+2019-12-24 16:21:51,856 [INFO] ThirdPartyDb:293 - Open Third Party DataBase File (C:/Users/colson/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 13 ms. number of Sw pack : 6
+2019-12-24 16:21:51,863 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2019-12-24 16:21:51,864 [INFO] PluginManage:292 - Check plugin tools
+2019-12-24 16:21:51,888 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2019-12-24 16:21:51,889 [INFO] PluginManage:292 - Check plugin updater
+2019-12-24 16:21:51,899 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2019-12-24 16:21:51,900 [INFO] PluginManage:265 - PluginManage : Loaded plugins [12]
+2019-12-24 16:21:52,100 [INFO] PinOutPanel:1361 - setPackage(No Configuration,No Configuration)
+2019-12-24 16:21:52,199 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2019-12-24 16:21:52,233 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2019-12-24 16:21:52,284 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2019-12-24 16:21:52,300 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2019-12-24 16:21:52,333 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2019-12-24 16:21:52,363 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2019-12-24 16:21:52,375 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2019-12-24 16:21:52,407 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2019-12-24 16:21:52,448 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2019-12-24 16:21:52,461 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2019-12-24 16:21:52,478 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2019-12-24 16:21:52,552 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2019-12-24 16:21:52,647 [INFO] PluginManager:200 - loadIPPluginJar : add gfxsimulator
+2019-12-24 16:21:52,744 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2019-12-24 16:21:52,759 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2019-12-24 16:21:52,798 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2019-12-24 16:21:52,838 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2019-12-24 16:21:52,875 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2019-12-24 16:21:52,968 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2019-12-24 16:21:53,000 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2019-12-24 16:21:53,010 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2019-12-24 16:21:53,021 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2019-12-24 16:21:53,059 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2019-12-24 16:21:53,113 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2019-12-24 16:21:53,132 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2019-12-24 16:21:53,153 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2019-12-24 16:21:53,164 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2019-12-24 16:21:53,206 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2019-12-24 16:21:53,239 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2019-12-24 16:21:53,279 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2019-12-24 16:21:53,296 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2019-12-24 16:21:53,341 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2019-12-24 16:21:53,359 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2019-12-24 16:21:53,377 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2019-12-24 16:21:53,394 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2019-12-24 16:21:53,410 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2019-12-24 16:21:53,444 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2019-12-24 16:21:54,390 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-12-24 16:21:54,572 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-12-24 16:21:54,575 [INFO] PinOutPanel:1361 - setPackage(No Configuration,No Configuration)
+2019-12-24 16:21:54,576 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-12-24 16:21:54,603 [INFO] Updater:860 - Updater Version found : 5.2.1
+2019-12-24 16:21:54,616 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926
+2019-12-24 16:21:54,865 [FATAL] Updater:277 - Updater called before beeing initialized
+2019-12-24 16:21:54,867 [ERROR] IntegrityCheckThread:227 - Cannot obtain thirdParties list 21
+2019-12-24 16:21:54,867 [ERROR] IntegrityCheckThread:96 - Unexpected exception IntegrityCheckThread Thread: Updater error
+2019-12-24 16:21:54,870 [ERROR] LogOutputStream:66 - [STDERR_REDIRECT] java.lang.Exception: Updater error
+2019-12-24 16:21:54,876 [ERROR] LogOutputStream:66 - [STDERR_REDIRECT] 	at com.st.microxplorer.plugins.thirdparty.engine.IntegrityCheckThread.getUpdaterThirdPartyList(IntegrityCheckThread.java:239)
+2019-12-24 16:21:54,884 [ERROR] LogOutputStream:66 - [STDERR_REDIRECT] 	at com.st.microxplorer.plugins.thirdparty.engine.IntegrityCheckThread.run(IntegrityCheckThread.java:61)
+2019-12-24 16:21:54,886 [INFO] ThirdPartyDb:263 - Close Third Party DataBase File (C:/Users/colson/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2019-12-24 16:21:55,410 [INFO] MainUpdater:2032 - connection check result : 10
+2019-12-24 16:21:55,412 [INFO] MainUpdater:223 - Updater Check For Update Now.
+2019-12-24 16:21:55,412 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.21
+2019-12-24 16:21:55,454 [INFO] CheckServerUpdateThread:121 - End of CheckServer Thread
+2019-12-24 16:21:55,624 [INFO] MainUpdater:2032 - connection check result : 10
+2019-12-24 16:21:55,624 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Successfull proxy connection.
+2019-12-24 16:21:55,829 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-12-24 16:21:55,829 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.21
+2019-12-24 16:21:55,832 [INFO] PinOutPanel:1361 - setPackage(No Configuration,No Configuration)
+2019-12-24 16:21:55,833 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 266795648 Bytes (318767104)
+2019-12-24 16:21:55,833 [INFO] MicroXplorer:371 - Change Database Path : 
+2019-12-24 16:21:55,833 [INFO] MicroXplorer:401 - Change Database Version : DB.5.0.21
+2019-12-24 16:21:55,834 [INFO] OpenFileManager:269 - Change cursor
+2019-12-24 16:21:58,393 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2019-12-24 16:21:58,393 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (MCO2PinFreq_Value) has invalid value (180000000)
+2019-12-24 16:21:58,394 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (SDIOFreq_Value) has invalid value (180000000)
+2019-12-24 16:21:58,394 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (USBFreq_Value) has invalid value (180000000)
+2019-12-24 16:21:58,638 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 428478560 Bytes (591396864)
+2019-12-24 16:21:58,770 [INFO] ThirdPartyDb:293 - Open Third Party DataBase File (C:/Users/colson/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 10 ms. number of Sw pack : 6
+2019-12-24 16:21:58,986 [INFO] ThirdParty:1207 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2019-12-24 16:21:58,987 [INFO] ThirdParty:1207 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 6.2.0
+2019-12-24 16:21:58,987 [INFO] ThirdParty:1207 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 3.4.0
+2019-12-24 16:21:58,987 [INFO] ThirdParty:1207 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.4.0
+2019-12-24 16:21:58,987 [INFO] ThirdParty:1207 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 3.0.0
+2019-12-24 16:21:58,987 [INFO] ThirdParty:1207 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 4.0.0
+2019-12-24 16:21:59,177 [INFO] PinOutPanel:1361 - setPackage(No Configuration,No Configuration)
+2019-12-24 16:21:59,179 [INFO] PinOutPanel:1361 - setPackage(STM32F446RETx,LQFP64)
+2019-12-24 16:21:59,705 [INFO] UtilMem:74 - Before build in PCC Used Memory: 278923728 Bytes (591396864)
+2019-12-24 16:22:00,373 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/colson/.stm32cubemx/plugins/power
+2019-12-24 16:22:00,375 [INFO] UtilMem:74 - After build in PCC Used Memory: 293187896 Bytes (591396864)
+2019-12-24 16:22:00,419 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2019-12-24 16:22:00,553 [INFO] OpenFileManager:289 - Restore cursor
+2019-12-24 16:22:00,557 [INFO] DbMcusXml:106 - Load MCU database from C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\/mcu/families.xml
+2019-12-24 16:22:01,801 [INFO] DbMcusJson:87 - JSON generation date=Wed Dec 11 20:27:49 KST 2019 (1576063669)
+2019-12-24 16:22:03,163 [INFO] DbMcus:192 - Found 1486 MCUs (1445 are supported by CubeMX, 1445 are visible in CubeMX)
+2019-12-24 16:22:03,165 [INFO] ApiDb:158 - Load user favorites file C:\Users\colson/.stm32cubemx/favorites.mcus.txt: 0 item(s)
+2019-12-24 16:22:03,165 [INFO] ApiDb:163 - User favorites MCUs=[]
+2019-12-24 16:22:03,166 [INFO] DbMcus:203 - Set 0 / 0 favorites MCUs
+2019-12-24 16:22:35,779 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Tab changed to: Clock Configuration
+2019-12-24 16:22:44,483 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Tab changed to: Pinout & Configuration
+2019-12-24 16:22:58,624 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 402170656 Bytes (639631360)
+2019-12-24 16:22:59,728 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 410032936 Bytes (639631360)
+2019-12-24 16:23:00,050 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: TIM1_8
+2019-12-24 16:23:00,050 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: SYS
+2019-12-24 16:23:00,051 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: RCC
+2019-12-24 16:23:00,051 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: NVIC
+2019-12-24 16:23:00,052 [INFO] CodeGenerator:572 - code generatio: config db path: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\
+2019-12-24 16:23:00,278 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\license.tmp_save
+2019-12-24 16:23:00,525 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\license.tmp
+2019-12-24 16:23:00,678 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\gpio.c_save
+2019-12-24 16:23:00,833 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\gpio.c
+2019-12-24 16:23:00,885 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\gpio.h_save
+2019-12-24 16:23:00,963 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\gpio.h
+2019-12-24 16:23:01,088 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 16:23:01,089 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-12-24 16:23:01,089 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 16:23:01,090 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 16:23:01,091 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-12-24 16:23:01,092 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 16:23:01,159 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\tim.c_save
+2019-12-24 16:23:01,294 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\tim.c
+2019-12-24 16:23:01,333 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\tim.h_save
+2019-12-24 16:23:01,412 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\tim.h
+2019-12-24 16:23:01,470 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-12-24 16:23:01,470 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 16:23:01,509 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_it.c_save
+2019-12-24 16:23:01,631 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_it.c
+2019-12-24 16:23:01,666 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_it.h_save
+2019-12-24 16:23:01,731 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_it.h
+2019-12-24 16:23:01,778 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_hal_msp.c_save
+2019-12-24 16:23:01,877 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_hal_msp.c
+2019-12-24 16:23:01,905 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\system.tmp_save
+2019-12-24 16:23:01,959 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\system.tmp
+2019-12-24 16:23:02,003 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_hal_conf.h_save
+2019-12-24 16:23:02,097 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_hal_conf.h
+2019-12-24 16:23:02,153 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\main.h_save
+2019-12-24 16:23:02,226 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\main.h
+2019-12-24 16:23:02,260 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\main.c_save
+2019-12-24 16:23:02,350 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\main.c
+2019-12-24 16:23:03,370 [INFO] ProjectBuilder:1500 - Time for Copy HAL[1] : 582mS.
+2019-12-24 16:23:03,375 [INFO] ProjectBuilder:2068 - Project Generator version: 3.3.0
+2019-12-24 16:23:03,550 [INFO] ConfigFileManager:883 - The Die is : DIE421
+2019-12-24 16:23:03,557 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] configName ==Arm Cortex-M4
+2019-12-24 16:23:03,900 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="RAM" access="xrw" start="0x20000000" size="128"
+2019-12-24 16:23:03,901 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="FLASH" access="rx" start="0x8000000" size="512"
+2019-12-24 16:23:04,033 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] namefile= STM32CubeIDE
+2019-12-24 16:23:04,034 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] method name===============update
+2019-12-24 16:23:06,192 [INFO] ProjectBuilder:2161 - Time for Generating toolchain IDE Files: 2817mS.
+2019-12-24 16:23:06,193 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 1mS.
+2019-12-24 16:23:06,196 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 0mS.
+2019-12-24 19:25:03,669 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 489230608 Bytes (682622976)
+2019-12-24 19:26:21,675 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 521528584 Bytes (682622976)
+2019-12-24 19:26:22,696 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 532014344 Bytes (682622976)
+2019-12-24 19:26:22,837 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: TIM1_8
+2019-12-24 19:26:22,837 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: SYS
+2019-12-24 19:26:22,837 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: RCC
+2019-12-24 19:26:22,837 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: NVIC
+2019-12-24 19:26:22,838 [INFO] CodeGenerator:572 - code generatio: config db path: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\
+2019-12-24 19:26:22,990 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\license.tmp_save
+2019-12-24 19:26:23,043 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\license.tmp
+2019-12-24 19:26:23,093 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\gpio.c_save
+2019-12-24 19:26:23,217 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\gpio.c
+2019-12-24 19:26:23,246 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\gpio.h_save
+2019-12-24 19:26:23,359 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\gpio.h
+2019-12-24 19:26:23,386 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 19:26:23,386 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-12-24 19:26:23,387 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 19:26:23,388 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 19:26:23,389 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-12-24 19:26:23,389 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 19:26:23,419 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\tim.c_save
+2019-12-24 19:26:23,520 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\tim.c
+2019-12-24 19:26:23,550 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\tim.h_save
+2019-12-24 19:26:23,623 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\tim.h
+2019-12-24 19:26:23,626 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-12-24 19:26:23,626 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 19:26:23,664 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_it.c_save
+2019-12-24 19:26:23,759 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_it.c
+2019-12-24 19:26:23,789 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_it.h_save
+2019-12-24 19:26:23,843 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_it.h
+2019-12-24 19:26:23,876 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_hal_msp.c_save
+2019-12-24 19:26:23,949 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_hal_msp.c
+2019-12-24 19:26:23,968 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\system.tmp_save
+2019-12-24 19:26:24,015 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\system.tmp
+2019-12-24 19:26:24,044 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_hal_conf.h_save
+2019-12-24 19:26:24,126 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_hal_conf.h
+2019-12-24 19:26:24,162 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\main.h_save
+2019-12-24 19:26:24,224 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\main.h
+2019-12-24 19:26:24,253 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\main.c_save
+2019-12-24 19:26:24,382 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\main.c
+2019-12-24 19:26:24,926 [INFO] ProjectBuilder:1500 - Time for Copy HAL[1] : 158mS.
+2019-12-24 19:26:24,928 [INFO] ProjectBuilder:2068 - Project Generator version: 3.3.0
+2019-12-24 19:26:25,124 [INFO] ConfigFileManager:883 - The Die is : DIE421
+2019-12-24 19:26:25,131 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] configName ==Arm Cortex-M4
+2019-12-24 19:26:25,433 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="RAM" access="xrw" start="0x20000000" size="128"
+2019-12-24 19:26:25,434 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="FLASH" access="rx" start="0x8000000" size="512"
+2019-12-24 19:26:25,560 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] namefile= STM32CubeIDE
+2019-12-24 19:26:25,560 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] method name===============update
+2019-12-24 19:26:25,796 [INFO] ProjectBuilder:2161 - Time for Generating toolchain IDE Files: 869mS.
+2019-12-24 19:26:25,797 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 1mS.
+2019-12-24 19:26:25,800 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 0mS.
+2019-12-24 19:47:06,109 [INFO] NvicIntPanel:85 - NVIC parent = javax.swing.JTabbedPane[,0,44,564x222,layout=com.st.microxplorer.stobjectsui.STTabbedPaneUI$TabbedPaneLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=352,maximumSize=,minimumSize=,preferredSize=,haveRegistered=false,tabPlacement=TOP]
+2019-12-24 19:47:20,104 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 652382456 Bytes (874512384)
+2019-12-24 19:47:21,220 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 663311600 Bytes (874512384)
+2019-12-24 19:47:21,340 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: TIM1_8
+2019-12-24 19:47:21,340 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: SYS
+2019-12-24 19:47:21,340 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: RCC
+2019-12-24 19:47:21,340 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: NVIC
+2019-12-24 19:47:21,340 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: DMA
+2019-12-24 19:47:21,341 [INFO] CodeGenerator:572 - code generatio: config db path: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\
+2019-12-24 19:47:21,521 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\license.tmp_save
+2019-12-24 19:47:21,565 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\license.tmp
+2019-12-24 19:47:21,593 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\gpio.c_save
+2019-12-24 19:47:21,655 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\gpio.c
+2019-12-24 19:47:21,681 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\gpio.h_save
+2019-12-24 19:47:21,735 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\gpio.h
+2019-12-24 19:47:21,760 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 19:47:21,761 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for DMA
+2019-12-24 19:47:21,761 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 19:47:21,791 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\dma.c_save
+2019-12-24 19:47:21,857 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\dma.c
+2019-12-24 19:47:21,884 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\dma.h_save
+2019-12-24 19:47:21,945 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\dma.h
+2019-12-24 19:47:21,947 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 19:47:21,948 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-12-24 19:47:21,948 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 19:47:21,949 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 19:47:21,951 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-12-24 19:47:21,951 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 19:47:21,986 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\tim.c_save
+2019-12-24 19:47:22,090 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\tim.c
+2019-12-24 19:47:22,113 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\tim.h_save
+2019-12-24 19:47:22,173 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\tim.h
+2019-12-24 19:47:22,176 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-12-24 19:47:22,177 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 19:47:22,207 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_it.c_save
+2019-12-24 19:47:22,289 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_it.c
+2019-12-24 19:47:22,317 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_it.h_save
+2019-12-24 19:47:22,373 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_it.h
+2019-12-24 19:47:22,401 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_hal_msp.c_save
+2019-12-24 19:47:22,472 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_hal_msp.c
+2019-12-24 19:47:22,491 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\system.tmp_save
+2019-12-24 19:47:22,535 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\system.tmp
+2019-12-24 19:47:22,563 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_hal_conf.h_save
+2019-12-24 19:47:22,639 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_hal_conf.h
+2019-12-24 19:47:22,676 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\main.h_save
+2019-12-24 19:47:22,740 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\main.h
+2019-12-24 19:47:22,762 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\main.c_save
+2019-12-24 19:47:22,833 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\main.c
+2019-12-24 19:47:23,369 [INFO] ProjectBuilder:1500 - Time for Copy HAL[1] : 113mS.
+2019-12-24 19:47:23,371 [INFO] ProjectBuilder:2068 - Project Generator version: 3.3.0
+2019-12-24 19:47:23,546 [INFO] ConfigFileManager:883 - The Die is : DIE421
+2019-12-24 19:47:23,553 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] configName ==Arm Cortex-M4
+2019-12-24 19:47:23,632 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="RAM" access="xrw" start="0x20000000" size="128"
+2019-12-24 19:47:23,633 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="FLASH" access="rx" start="0x8000000" size="512"
+2019-12-24 19:47:23,781 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] namefile= STM32CubeIDE
+2019-12-24 19:47:23,782 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] method name===============update
+2019-12-24 19:47:24,088 [INFO] ProjectBuilder:2161 - Time for Generating toolchain IDE Files: 718mS.
+2019-12-24 19:47:24,091 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 1mS.
+2019-12-24 19:47:24,093 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 0mS.
+2019-12-24 19:51:49,732 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 522905424 Bytes (874512384)
+2019-12-24 19:51:52,093 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 533504832 Bytes (874512384)
+2019-12-24 19:51:52,203 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: TIM1_8
+2019-12-24 19:51:52,203 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: SYS
+2019-12-24 19:51:52,203 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: RCC
+2019-12-24 19:51:52,203 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: NVIC
+2019-12-24 19:51:52,203 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: DMA
+2019-12-24 19:51:52,204 [INFO] CodeGenerator:572 - code generatio: config db path: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\
+2019-12-24 19:51:52,220 [INFO] Argument:277 - Argument : hdmavalue: null
+2019-12-24 19:51:52,220 [INFO] Argument:279 - 	 sub Args: 
+2019-12-24 19:51:52,220 [INFO] Argument:277 - Argument : Instancevalue: DMA2_Stream1
+2019-12-24 19:51:52,221 [INFO] Argument:287 - Argument : Instancevalue: DMA2_Stream1
+2019-12-24 19:51:52,221 [INFO] Argument:277 - Argument : Initvalue: null
+2019-12-24 19:51:52,221 [INFO] Argument:279 - 	 sub Args: 
+2019-12-24 19:51:52,221 [INFO] Argument:277 - Argument : Channelvalue: DMA_CHANNEL_6
+2019-12-24 19:51:52,221 [INFO] Argument:287 - Argument : Channelvalue: DMA_CHANNEL_6
+2019-12-24 19:51:52,221 [INFO] Argument:277 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2019-12-24 19:51:52,221 [INFO] Argument:287 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2019-12-24 19:51:52,221 [INFO] Argument:277 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2019-12-24 19:51:52,221 [INFO] Argument:287 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2019-12-24 19:51:52,221 [INFO] Argument:277 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2019-12-24 19:51:52,221 [INFO] Argument:287 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2019-12-24 19:51:52,221 [INFO] Argument:277 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2019-12-24 19:51:52,221 [INFO] Argument:287 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2019-12-24 19:51:52,221 [INFO] Argument:277 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2019-12-24 19:51:52,221 [INFO] Argument:287 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2019-12-24 19:51:52,221 [INFO] Argument:277 - Argument : Modevalue: DMA_NORMAL
+2019-12-24 19:51:52,222 [INFO] Argument:287 - Argument : Modevalue: DMA_NORMAL
+2019-12-24 19:51:52,222 [INFO] Argument:277 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2019-12-24 19:51:52,222 [INFO] Argument:287 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2019-12-24 19:51:52,222 [INFO] Argument:277 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2019-12-24 19:51:52,222 [INFO] Argument:287 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2019-12-24 19:51:52,222 [INFO] Argument:277 - Argument : FIFOThresholdvalue: null
+2019-12-24 19:51:52,222 [INFO] Argument:287 - Argument : FIFOThresholdvalue: null
+2019-12-24 19:51:52,222 [INFO] Argument:277 - Argument : MemBurstvalue: null
+2019-12-24 19:51:52,222 [INFO] Argument:287 - Argument : MemBurstvalue: null
+2019-12-24 19:51:52,222 [INFO] Argument:277 - Argument : PeriphBurstvalue: null
+2019-12-24 19:51:52,222 [INFO] Argument:287 - Argument : PeriphBurstvalue: null
+2019-12-24 19:51:52,222 [INFO] Argument:277 - Argument : Lockvalue: null
+2019-12-24 19:51:52,222 [INFO] Argument:287 - Argument : Lockvalue: null
+2019-12-24 19:51:52,222 [INFO] Argument:277 - Argument : Statevalue: null
+2019-12-24 19:51:52,222 [INFO] Argument:287 - Argument : Statevalue: null
+2019-12-24 19:51:52,222 [INFO] Argument:277 - Argument : Parentvalue: null
+2019-12-24 19:51:52,222 [INFO] Argument:287 - Argument : Parentvalue: null
+2019-12-24 19:51:52,223 [INFO] Argument:277 - Argument : XferCpltCallbackvalue: null
+2019-12-24 19:51:52,223 [INFO] Argument:287 - Argument : XferCpltCallbackvalue: null
+2019-12-24 19:51:52,223 [INFO] Argument:277 - Argument : XferHalfCpltCallbackvalue: null
+2019-12-24 19:51:52,223 [INFO] Argument:287 - Argument : XferHalfCpltCallbackvalue: null
+2019-12-24 19:51:52,223 [INFO] Argument:277 - Argument : XferM1CpltCallbackvalue: null
+2019-12-24 19:51:52,223 [INFO] Argument:287 - Argument : XferM1CpltCallbackvalue: null
+2019-12-24 19:51:52,223 [INFO] Argument:277 - Argument : XferErrorCallbackvalue: null
+2019-12-24 19:51:52,223 [INFO] Argument:287 - Argument : XferErrorCallbackvalue: null
+2019-12-24 19:51:52,223 [INFO] Argument:277 - Argument : ErrorCodevalue: null
+2019-12-24 19:51:52,223 [INFO] Argument:287 - Argument : ErrorCodevalue: null
+2019-12-24 19:51:52,331 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\license.tmp_save
+2019-12-24 19:51:52,376 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\license.tmp
+2019-12-24 19:51:52,406 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\gpio.c_save
+2019-12-24 19:51:52,463 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\gpio.c
+2019-12-24 19:51:52,486 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\gpio.h_save
+2019-12-24 19:51:52,542 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\gpio.h
+2019-12-24 19:51:52,565 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 19:51:52,566 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for DMA
+2019-12-24 19:51:52,566 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 19:51:52,596 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\dma.c_save
+2019-12-24 19:51:52,651 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\dma.c
+2019-12-24 19:51:52,671 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\dma.h_save
+2019-12-24 19:51:52,724 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\dma.h
+2019-12-24 19:51:52,726 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 19:51:52,727 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-12-24 19:51:52,727 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 19:51:52,728 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 19:51:52,729 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-12-24 19:51:52,730 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 19:51:52,759 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\tim.c_save
+2019-12-24 19:51:52,851 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\tim.c
+2019-12-24 19:51:52,872 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\tim.h_save
+2019-12-24 19:51:52,925 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\tim.h
+2019-12-24 19:51:52,928 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-12-24 19:51:52,928 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 19:51:52,955 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_it.c_save
+2019-12-24 19:51:53,072 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_it.c
+2019-12-24 19:51:53,097 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_it.h_save
+2019-12-24 19:51:53,151 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_it.h
+2019-12-24 19:51:53,181 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_hal_msp.c_save
+2019-12-24 19:51:53,255 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_hal_msp.c
+2019-12-24 19:51:53,274 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\system.tmp_save
+2019-12-24 19:51:53,323 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\system.tmp
+2019-12-24 19:51:53,356 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_hal_conf.h_save
+2019-12-24 19:51:53,442 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_hal_conf.h
+2019-12-24 19:51:53,489 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\main.h_save
+2019-12-24 19:51:53,548 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\main.h
+2019-12-24 19:51:53,575 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\main.c_save
+2019-12-24 19:51:53,638 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\main.c
+2019-12-24 19:51:54,043 [INFO] ProjectBuilder:1500 - Time for Copy HAL[1] : 136mS.
+2019-12-24 19:51:54,045 [INFO] ProjectBuilder:2068 - Project Generator version: 3.3.0
+2019-12-24 19:51:54,199 [INFO] ConfigFileManager:883 - The Die is : DIE421
+2019-12-24 19:51:54,205 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] configName ==Arm Cortex-M4
+2019-12-24 19:51:54,504 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="RAM" access="xrw" start="0x20000000" size="128"
+2019-12-24 19:51:54,513 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="FLASH" access="rx" start="0x8000000" size="512"
+2019-12-24 19:51:54,614 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] namefile= STM32CubeIDE
+2019-12-24 19:51:54,614 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] method name===============update
+2019-12-24 19:51:54,742 [INFO] ProjectBuilder:2161 - Time for Generating toolchain IDE Files: 697mS.
+2019-12-24 19:51:54,743 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 1mS.
+2019-12-24 19:51:54,746 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 0mS.
+2019-12-24 19:53:41,042 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 404667768 Bytes (929038336)
+2019-12-24 19:53:41,925 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 414625080 Bytes (929038336)
+2019-12-24 19:53:42,031 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: TIM1_8
+2019-12-24 19:53:42,031 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: SYS
+2019-12-24 19:53:42,031 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: RCC
+2019-12-24 19:53:42,031 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: NVIC
+2019-12-24 19:53:42,031 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: DMA
+2019-12-24 19:53:42,032 [INFO] CodeGenerator:572 - code generatio: config db path: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\
+2019-12-24 19:53:42,046 [INFO] Argument:277 - Argument : hdmavalue: null
+2019-12-24 19:53:42,047 [INFO] Argument:279 - 	 sub Args: 
+2019-12-24 19:53:42,047 [INFO] Argument:277 - Argument : Instancevalue: DMA2_Stream1
+2019-12-24 19:53:42,047 [INFO] Argument:287 - Argument : Instancevalue: DMA2_Stream1
+2019-12-24 19:53:42,047 [INFO] Argument:277 - Argument : Initvalue: null
+2019-12-24 19:53:42,047 [INFO] Argument:279 - 	 sub Args: 
+2019-12-24 19:53:42,047 [INFO] Argument:277 - Argument : Channelvalue: DMA_CHANNEL_6
+2019-12-24 19:53:42,047 [INFO] Argument:287 - Argument : Channelvalue: DMA_CHANNEL_6
+2019-12-24 19:53:42,047 [INFO] Argument:277 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2019-12-24 19:53:42,047 [INFO] Argument:287 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2019-12-24 19:53:42,047 [INFO] Argument:277 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2019-12-24 19:53:42,047 [INFO] Argument:287 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2019-12-24 19:53:42,047 [INFO] Argument:277 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2019-12-24 19:53:42,047 [INFO] Argument:287 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2019-12-24 19:53:42,047 [INFO] Argument:277 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2019-12-24 19:53:42,047 [INFO] Argument:287 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2019-12-24 19:53:42,048 [INFO] Argument:277 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2019-12-24 19:53:42,048 [INFO] Argument:287 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2019-12-24 19:53:42,048 [INFO] Argument:277 - Argument : Modevalue: DMA_NORMAL
+2019-12-24 19:53:42,048 [INFO] Argument:287 - Argument : Modevalue: DMA_NORMAL
+2019-12-24 19:53:42,048 [INFO] Argument:277 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2019-12-24 19:53:42,048 [INFO] Argument:287 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2019-12-24 19:53:42,048 [INFO] Argument:277 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2019-12-24 19:53:42,048 [INFO] Argument:287 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2019-12-24 19:53:42,048 [INFO] Argument:277 - Argument : FIFOThresholdvalue: null
+2019-12-24 19:53:42,048 [INFO] Argument:287 - Argument : FIFOThresholdvalue: null
+2019-12-24 19:53:42,048 [INFO] Argument:277 - Argument : MemBurstvalue: null
+2019-12-24 19:53:42,048 [INFO] Argument:287 - Argument : MemBurstvalue: null
+2019-12-24 19:53:42,048 [INFO] Argument:277 - Argument : PeriphBurstvalue: null
+2019-12-24 19:53:42,048 [INFO] Argument:287 - Argument : PeriphBurstvalue: null
+2019-12-24 19:53:42,048 [INFO] Argument:277 - Argument : Lockvalue: null
+2019-12-24 19:53:42,048 [INFO] Argument:287 - Argument : Lockvalue: null
+2019-12-24 19:53:42,049 [INFO] Argument:277 - Argument : Statevalue: null
+2019-12-24 19:53:42,049 [INFO] Argument:287 - Argument : Statevalue: null
+2019-12-24 19:53:42,049 [INFO] Argument:277 - Argument : Parentvalue: null
+2019-12-24 19:53:42,049 [INFO] Argument:287 - Argument : Parentvalue: null
+2019-12-24 19:53:42,049 [INFO] Argument:277 - Argument : XferCpltCallbackvalue: null
+2019-12-24 19:53:42,049 [INFO] Argument:287 - Argument : XferCpltCallbackvalue: null
+2019-12-24 19:53:42,049 [INFO] Argument:277 - Argument : XferHalfCpltCallbackvalue: null
+2019-12-24 19:53:42,049 [INFO] Argument:287 - Argument : XferHalfCpltCallbackvalue: null
+2019-12-24 19:53:42,049 [INFO] Argument:277 - Argument : XferM1CpltCallbackvalue: null
+2019-12-24 19:53:42,049 [INFO] Argument:287 - Argument : XferM1CpltCallbackvalue: null
+2019-12-24 19:53:42,049 [INFO] Argument:277 - Argument : XferErrorCallbackvalue: null
+2019-12-24 19:53:42,049 [INFO] Argument:287 - Argument : XferErrorCallbackvalue: null
+2019-12-24 19:53:42,049 [INFO] Argument:277 - Argument : ErrorCodevalue: null
+2019-12-24 19:53:42,049 [INFO] Argument:287 - Argument : ErrorCodevalue: null
+2019-12-24 19:53:42,155 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\license.tmp_save
+2019-12-24 19:53:42,206 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\license.tmp
+2019-12-24 19:53:42,234 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\gpio.c_save
+2019-12-24 19:53:42,289 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\gpio.c
+2019-12-24 19:53:42,313 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\gpio.h_save
+2019-12-24 19:53:42,371 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\gpio.h
+2019-12-24 19:53:42,393 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 19:53:42,394 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for DMA
+2019-12-24 19:53:42,395 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 19:53:42,424 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\dma.c_save
+2019-12-24 19:53:42,477 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\dma.c
+2019-12-24 19:53:42,497 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\dma.h_save
+2019-12-24 19:53:42,552 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\dma.h
+2019-12-24 19:53:42,554 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 19:53:42,555 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-12-24 19:53:42,555 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 19:53:42,556 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 19:53:42,557 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-12-24 19:53:42,557 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 19:53:42,586 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\tim.c_save
+2019-12-24 19:53:42,662 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\tim.c
+2019-12-24 19:53:42,683 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\tim.h_save
+2019-12-24 19:53:42,738 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\tim.h
+2019-12-24 19:53:42,740 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-12-24 19:53:42,741 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 19:53:42,794 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_it.c_save
+2019-12-24 19:53:42,867 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_it.c
+2019-12-24 19:53:42,893 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_it.h_save
+2019-12-24 19:53:42,952 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_it.h
+2019-12-24 19:53:42,990 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_hal_msp.c_save
+2019-12-24 19:53:43,069 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_hal_msp.c
+2019-12-24 19:53:43,090 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\system.tmp_save
+2019-12-24 19:53:43,137 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\system.tmp
+2019-12-24 19:53:43,170 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_hal_conf.h_save
+2019-12-24 19:53:43,251 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_hal_conf.h
+2019-12-24 19:53:43,291 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\main.h_save
+2019-12-24 19:53:43,347 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\main.h
+2019-12-24 19:53:43,371 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\main.c_save
+2019-12-24 19:53:43,428 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\main.c
+2019-12-24 19:53:44,018 [INFO] ProjectBuilder:1500 - Time for Copy HAL[1] : 154mS.
+2019-12-24 19:53:44,020 [INFO] ProjectBuilder:2068 - Project Generator version: 3.3.0
+2019-12-24 19:53:44,194 [INFO] ConfigFileManager:883 - The Die is : DIE421
+2019-12-24 19:53:44,201 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] configName ==Arm Cortex-M4
+2019-12-24 19:53:44,316 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="RAM" access="xrw" start="0x20000000" size="128"
+2019-12-24 19:53:44,317 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="FLASH" access="rx" start="0x8000000" size="512"
+2019-12-24 19:53:44,406 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] namefile= STM32CubeIDE
+2019-12-24 19:53:44,407 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] method name===============update
+2019-12-24 19:53:44,716 [INFO] ProjectBuilder:2161 - Time for Generating toolchain IDE Files: 696mS.
+2019-12-24 19:53:44,720 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 1mS.
+2019-12-24 19:53:44,723 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 0mS.
+2019-12-24 20:39:46,715 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 510945760 Bytes (929038336)
+2019-12-24 20:39:47,689 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 519978040 Bytes (929038336)
+2019-12-24 20:39:47,792 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: TIM1_8
+2019-12-24 20:39:47,792 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: SYS
+2019-12-24 20:39:47,792 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: RCC
+2019-12-24 20:39:47,792 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: NVIC
+2019-12-24 20:39:47,793 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: DMA
+2019-12-24 20:39:47,794 [INFO] CodeGenerator:572 - code generatio: config db path: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\
+2019-12-24 20:39:47,809 [INFO] Argument:277 - Argument : hdmavalue: null
+2019-12-24 20:39:47,809 [INFO] Argument:279 - 	 sub Args: 
+2019-12-24 20:39:47,809 [INFO] Argument:277 - Argument : Instancevalue: DMA2_Stream1
+2019-12-24 20:39:47,809 [INFO] Argument:287 - Argument : Instancevalue: DMA2_Stream1
+2019-12-24 20:39:47,809 [INFO] Argument:277 - Argument : Initvalue: null
+2019-12-24 20:39:47,809 [INFO] Argument:279 - 	 sub Args: 
+2019-12-24 20:39:47,809 [INFO] Argument:277 - Argument : Channelvalue: DMA_CHANNEL_6
+2019-12-24 20:39:47,809 [INFO] Argument:287 - Argument : Channelvalue: DMA_CHANNEL_6
+2019-12-24 20:39:47,809 [INFO] Argument:277 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2019-12-24 20:39:47,810 [INFO] Argument:287 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2019-12-24 20:39:47,810 [INFO] Argument:277 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2019-12-24 20:39:47,810 [INFO] Argument:287 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2019-12-24 20:39:47,810 [INFO] Argument:277 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2019-12-24 20:39:47,810 [INFO] Argument:287 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2019-12-24 20:39:47,810 [INFO] Argument:277 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2019-12-24 20:39:47,810 [INFO] Argument:287 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2019-12-24 20:39:47,810 [INFO] Argument:277 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2019-12-24 20:39:47,810 [INFO] Argument:287 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2019-12-24 20:39:47,810 [INFO] Argument:277 - Argument : Modevalue: DMA_NORMAL
+2019-12-24 20:39:47,810 [INFO] Argument:287 - Argument : Modevalue: DMA_NORMAL
+2019-12-24 20:39:47,811 [INFO] Argument:277 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2019-12-24 20:39:47,811 [INFO] Argument:287 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2019-12-24 20:39:47,811 [INFO] Argument:277 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2019-12-24 20:39:47,811 [INFO] Argument:287 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2019-12-24 20:39:47,811 [INFO] Argument:277 - Argument : FIFOThresholdvalue: null
+2019-12-24 20:39:47,811 [INFO] Argument:287 - Argument : FIFOThresholdvalue: null
+2019-12-24 20:39:47,811 [INFO] Argument:277 - Argument : MemBurstvalue: null
+2019-12-24 20:39:47,811 [INFO] Argument:287 - Argument : MemBurstvalue: null
+2019-12-24 20:39:47,811 [INFO] Argument:277 - Argument : PeriphBurstvalue: null
+2019-12-24 20:39:47,811 [INFO] Argument:287 - Argument : PeriphBurstvalue: null
+2019-12-24 20:39:47,811 [INFO] Argument:277 - Argument : Lockvalue: null
+2019-12-24 20:39:47,811 [INFO] Argument:287 - Argument : Lockvalue: null
+2019-12-24 20:39:47,811 [INFO] Argument:277 - Argument : Statevalue: null
+2019-12-24 20:39:47,811 [INFO] Argument:287 - Argument : Statevalue: null
+2019-12-24 20:39:47,811 [INFO] Argument:277 - Argument : Parentvalue: null
+2019-12-24 20:39:47,811 [INFO] Argument:287 - Argument : Parentvalue: null
+2019-12-24 20:39:47,811 [INFO] Argument:277 - Argument : XferCpltCallbackvalue: null
+2019-12-24 20:39:47,811 [INFO] Argument:287 - Argument : XferCpltCallbackvalue: null
+2019-12-24 20:39:47,812 [INFO] Argument:277 - Argument : XferHalfCpltCallbackvalue: null
+2019-12-24 20:39:47,812 [INFO] Argument:287 - Argument : XferHalfCpltCallbackvalue: null
+2019-12-24 20:39:47,812 [INFO] Argument:277 - Argument : XferM1CpltCallbackvalue: null
+2019-12-24 20:39:47,812 [INFO] Argument:287 - Argument : XferM1CpltCallbackvalue: null
+2019-12-24 20:39:47,812 [INFO] Argument:277 - Argument : XferErrorCallbackvalue: null
+2019-12-24 20:39:47,812 [INFO] Argument:287 - Argument : XferErrorCallbackvalue: null
+2019-12-24 20:39:47,812 [INFO] Argument:277 - Argument : ErrorCodevalue: null
+2019-12-24 20:39:47,812 [INFO] Argument:287 - Argument : ErrorCodevalue: null
+2019-12-24 20:39:47,923 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\license.tmp_save
+2019-12-24 20:39:47,969 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\license.tmp
+2019-12-24 20:39:48,004 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\gpio.c_save
+2019-12-24 20:39:48,060 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\gpio.c
+2019-12-24 20:39:48,083 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\gpio.h_save
+2019-12-24 20:39:48,137 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\gpio.h
+2019-12-24 20:39:48,158 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 20:39:48,159 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for DMA
+2019-12-24 20:39:48,159 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 20:39:48,190 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\dma.c_save
+2019-12-24 20:39:48,256 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\dma.c
+2019-12-24 20:39:48,278 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\dma.h_save
+2019-12-24 20:39:48,335 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\dma.h
+2019-12-24 20:39:48,337 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 20:39:48,338 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-12-24 20:39:48,338 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 20:39:48,339 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 20:39:48,340 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-12-24 20:39:48,340 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 20:39:48,370 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\tim.c_save
+2019-12-24 20:39:48,469 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\tim.c
+2019-12-24 20:39:48,497 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\tim.h_save
+2019-12-24 20:39:48,558 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\tim.h
+2019-12-24 20:39:48,560 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-12-24 20:39:48,561 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 20:39:48,591 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_it.c_save
+2019-12-24 20:39:48,659 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_it.c
+2019-12-24 20:39:48,684 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_it.h_save
+2019-12-24 20:39:48,740 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_it.h
+2019-12-24 20:39:48,772 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_hal_msp.c_save
+2019-12-24 20:39:48,858 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_hal_msp.c
+2019-12-24 20:39:48,879 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\system.tmp_save
+2019-12-24 20:39:48,923 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\system.tmp
+2019-12-24 20:39:48,952 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_hal_conf.h_save
+2019-12-24 20:39:49,029 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_hal_conf.h
+2019-12-24 20:39:49,122 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\main.h_save
+2019-12-24 20:39:49,190 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\main.h
+2019-12-24 20:39:49,213 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\main.c_save
+2019-12-24 20:39:49,271 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\main.c
+2019-12-24 20:39:49,710 [INFO] ProjectBuilder:1500 - Time for Copy HAL[1] : 179mS.
+2019-12-24 20:39:49,712 [INFO] ProjectBuilder:2068 - Project Generator version: 3.3.0
+2019-12-24 20:39:49,867 [INFO] ConfigFileManager:883 - The Die is : DIE421
+2019-12-24 20:39:49,873 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] configName ==Arm Cortex-M4
+2019-12-24 20:39:49,943 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="RAM" access="xrw" start="0x20000000" size="128"
+2019-12-24 20:39:49,944 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="FLASH" access="rx" start="0x8000000" size="512"
+2019-12-24 20:39:50,038 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] namefile= STM32CubeIDE
+2019-12-24 20:39:50,039 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] method name===============update
+2019-12-24 20:39:50,360 [INFO] ProjectBuilder:2161 - Time for Generating toolchain IDE Files: 648mS.
+2019-12-24 20:39:50,362 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 2mS.
+2019-12-24 20:39:50,365 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 0mS.
+2019-12-24 20:45:55,099 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Tab changed to: Clock Configuration
+2019-12-24 21:06:26,819 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 529509408 Bytes (1013972992)
+2019-12-24 21:06:27,769 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 538946592 Bytes (1013972992)
+2019-12-24 21:06:27,891 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: TIM1_8
+2019-12-24 21:06:27,892 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: SYS
+2019-12-24 21:06:27,892 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: RCC
+2019-12-24 21:06:27,892 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: NVIC
+2019-12-24 21:06:27,892 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: DMA
+2019-12-24 21:06:27,893 [INFO] CodeGenerator:572 - code generatio: config db path: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\
+2019-12-24 21:06:27,907 [INFO] Argument:277 - Argument : hdmavalue: null
+2019-12-24 21:06:27,908 [INFO] Argument:279 - 	 sub Args: 
+2019-12-24 21:06:27,908 [INFO] Argument:277 - Argument : Instancevalue: DMA2_Stream1
+2019-12-24 21:06:27,908 [INFO] Argument:287 - Argument : Instancevalue: DMA2_Stream1
+2019-12-24 21:06:27,908 [INFO] Argument:277 - Argument : Initvalue: null
+2019-12-24 21:06:27,908 [INFO] Argument:279 - 	 sub Args: 
+2019-12-24 21:06:27,908 [INFO] Argument:277 - Argument : Channelvalue: DMA_CHANNEL_6
+2019-12-24 21:06:27,908 [INFO] Argument:287 - Argument : Channelvalue: DMA_CHANNEL_6
+2019-12-24 21:06:27,908 [INFO] Argument:277 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2019-12-24 21:06:27,908 [INFO] Argument:287 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2019-12-24 21:06:27,908 [INFO] Argument:277 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2019-12-24 21:06:27,908 [INFO] Argument:287 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2019-12-24 21:06:27,908 [INFO] Argument:277 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2019-12-24 21:06:27,908 [INFO] Argument:287 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2019-12-24 21:06:27,908 [INFO] Argument:277 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2019-12-24 21:06:27,908 [INFO] Argument:287 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2019-12-24 21:06:27,908 [INFO] Argument:277 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2019-12-24 21:06:27,908 [INFO] Argument:287 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2019-12-24 21:06:27,908 [INFO] Argument:277 - Argument : Modevalue: DMA_CIRCULAR
+2019-12-24 21:06:27,909 [INFO] Argument:287 - Argument : Modevalue: DMA_CIRCULAR
+2019-12-24 21:06:27,909 [INFO] Argument:277 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2019-12-24 21:06:27,909 [INFO] Argument:287 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2019-12-24 21:06:27,909 [INFO] Argument:277 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2019-12-24 21:06:27,909 [INFO] Argument:287 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2019-12-24 21:06:27,909 [INFO] Argument:277 - Argument : FIFOThresholdvalue: null
+2019-12-24 21:06:27,909 [INFO] Argument:287 - Argument : FIFOThresholdvalue: null
+2019-12-24 21:06:27,909 [INFO] Argument:277 - Argument : MemBurstvalue: null
+2019-12-24 21:06:27,909 [INFO] Argument:287 - Argument : MemBurstvalue: null
+2019-12-24 21:06:27,909 [INFO] Argument:277 - Argument : PeriphBurstvalue: null
+2019-12-24 21:06:27,909 [INFO] Argument:287 - Argument : PeriphBurstvalue: null
+2019-12-24 21:06:27,909 [INFO] Argument:277 - Argument : Lockvalue: null
+2019-12-24 21:06:27,909 [INFO] Argument:287 - Argument : Lockvalue: null
+2019-12-24 21:06:27,909 [INFO] Argument:277 - Argument : Statevalue: null
+2019-12-24 21:06:27,909 [INFO] Argument:287 - Argument : Statevalue: null
+2019-12-24 21:06:27,909 [INFO] Argument:277 - Argument : Parentvalue: null
+2019-12-24 21:06:27,909 [INFO] Argument:287 - Argument : Parentvalue: null
+2019-12-24 21:06:27,910 [INFO] Argument:277 - Argument : XferCpltCallbackvalue: null
+2019-12-24 21:06:27,910 [INFO] Argument:287 - Argument : XferCpltCallbackvalue: null
+2019-12-24 21:06:27,910 [INFO] Argument:277 - Argument : XferHalfCpltCallbackvalue: null
+2019-12-24 21:06:27,910 [INFO] Argument:287 - Argument : XferHalfCpltCallbackvalue: null
+2019-12-24 21:06:27,910 [INFO] Argument:277 - Argument : XferM1CpltCallbackvalue: null
+2019-12-24 21:06:27,910 [INFO] Argument:287 - Argument : XferM1CpltCallbackvalue: null
+2019-12-24 21:06:27,910 [INFO] Argument:277 - Argument : XferErrorCallbackvalue: null
+2019-12-24 21:06:27,910 [INFO] Argument:287 - Argument : XferErrorCallbackvalue: null
+2019-12-24 21:06:27,910 [INFO] Argument:277 - Argument : ErrorCodevalue: null
+2019-12-24 21:06:27,910 [INFO] Argument:287 - Argument : ErrorCodevalue: null
+2019-12-24 21:06:28,049 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\license.tmp_save
+2019-12-24 21:06:28,096 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\license.tmp
+2019-12-24 21:06:28,134 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\gpio.c_save
+2019-12-24 21:06:28,201 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\gpio.c
+2019-12-24 21:06:28,228 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\gpio.h_save
+2019-12-24 21:06:28,288 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\gpio.h
+2019-12-24 21:06:28,332 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 21:06:28,333 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for DMA
+2019-12-24 21:06:28,333 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 21:06:28,368 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\dma.c_save
+2019-12-24 21:06:28,431 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\dma.c
+2019-12-24 21:06:28,455 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\dma.h_save
+2019-12-24 21:06:28,517 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\dma.h
+2019-12-24 21:06:28,519 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 21:06:28,520 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-12-24 21:06:28,520 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 21:06:28,521 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 21:06:28,522 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-12-24 21:06:28,523 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 21:06:28,557 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\tim.c_save
+2019-12-24 21:06:28,655 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\tim.c
+2019-12-24 21:06:28,691 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\tim.h_save
+2019-12-24 21:06:28,758 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\tim.h
+2019-12-24 21:06:28,761 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-12-24 21:06:28,761 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 21:06:28,801 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_it.c_save
+2019-12-24 21:06:28,882 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_it.c
+2019-12-24 21:06:28,911 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_it.h_save
+2019-12-24 21:06:28,972 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_it.h
+2019-12-24 21:06:29,011 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_hal_msp.c_save
+2019-12-24 21:06:29,093 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_hal_msp.c
+2019-12-24 21:06:29,121 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\system.tmp_save
+2019-12-24 21:06:29,167 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\system.tmp
+2019-12-24 21:06:29,199 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_hal_conf.h_save
+2019-12-24 21:06:29,275 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_hal_conf.h
+2019-12-24 21:06:29,319 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\main.h_save
+2019-12-24 21:06:29,381 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\main.h
+2019-12-24 21:06:29,414 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\main.c_save
+2019-12-24 21:06:29,502 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\main.c
+2019-12-24 21:06:30,388 [INFO] ProjectBuilder:1500 - Time for Copy HAL[1] : 471mS.
+2019-12-24 21:06:30,390 [INFO] ProjectBuilder:2068 - Project Generator version: 3.3.0
+2019-12-24 21:06:30,600 [INFO] ConfigFileManager:883 - The Die is : DIE421
+2019-12-24 21:06:30,606 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] configName ==Arm Cortex-M4
+2019-12-24 21:06:30,675 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="RAM" access="xrw" start="0x20000000" size="128"
+2019-12-24 21:06:30,676 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="FLASH" access="rx" start="0x8000000" size="512"
+2019-12-24 21:06:30,788 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] namefile= STM32CubeIDE
+2019-12-24 21:06:30,789 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] method name===============update
+2019-12-24 21:06:31,163 [INFO] ProjectBuilder:2161 - Time for Generating toolchain IDE Files: 773mS.
+2019-12-24 21:06:31,164 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 1mS.
+2019-12-24 21:06:31,166 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 0mS.
+2019-12-24 21:07:04,531 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 538157624 Bytes (1027604480)
+2019-12-24 21:07:05,298 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 548642696 Bytes (1027604480)
+2019-12-24 21:07:05,405 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: TIM1_8
+2019-12-24 21:07:05,405 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: SYS
+2019-12-24 21:07:05,405 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: RCC
+2019-12-24 21:07:05,405 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: NVIC
+2019-12-24 21:07:05,405 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: DMA
+2019-12-24 21:07:05,406 [INFO] CodeGenerator:572 - code generatio: config db path: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\
+2019-12-24 21:07:05,420 [INFO] Argument:277 - Argument : hdmavalue: null
+2019-12-24 21:07:05,420 [INFO] Argument:279 - 	 sub Args: 
+2019-12-24 21:07:05,420 [INFO] Argument:277 - Argument : Instancevalue: DMA2_Stream1
+2019-12-24 21:07:05,421 [INFO] Argument:287 - Argument : Instancevalue: DMA2_Stream1
+2019-12-24 21:07:05,421 [INFO] Argument:277 - Argument : Initvalue: null
+2019-12-24 21:07:05,421 [INFO] Argument:279 - 	 sub Args: 
+2019-12-24 21:07:05,421 [INFO] Argument:277 - Argument : Channelvalue: DMA_CHANNEL_6
+2019-12-24 21:07:05,421 [INFO] Argument:287 - Argument : Channelvalue: DMA_CHANNEL_6
+2019-12-24 21:07:05,421 [INFO] Argument:277 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2019-12-24 21:07:05,421 [INFO] Argument:287 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2019-12-24 21:07:05,421 [INFO] Argument:277 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2019-12-24 21:07:05,421 [INFO] Argument:287 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2019-12-24 21:07:05,421 [INFO] Argument:277 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2019-12-24 21:07:05,421 [INFO] Argument:287 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2019-12-24 21:07:05,421 [INFO] Argument:277 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2019-12-24 21:07:05,421 [INFO] Argument:287 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2019-12-24 21:07:05,421 [INFO] Argument:277 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2019-12-24 21:07:05,421 [INFO] Argument:287 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2019-12-24 21:07:05,421 [INFO] Argument:277 - Argument : Modevalue: DMA_CIRCULAR
+2019-12-24 21:07:05,421 [INFO] Argument:287 - Argument : Modevalue: DMA_CIRCULAR
+2019-12-24 21:07:05,421 [INFO] Argument:277 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2019-12-24 21:07:05,422 [INFO] Argument:287 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2019-12-24 21:07:05,422 [INFO] Argument:277 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2019-12-24 21:07:05,422 [INFO] Argument:287 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2019-12-24 21:07:05,422 [INFO] Argument:277 - Argument : FIFOThresholdvalue: null
+2019-12-24 21:07:05,422 [INFO] Argument:287 - Argument : FIFOThresholdvalue: null
+2019-12-24 21:07:05,422 [INFO] Argument:277 - Argument : MemBurstvalue: null
+2019-12-24 21:07:05,422 [INFO] Argument:287 - Argument : MemBurstvalue: null
+2019-12-24 21:07:05,422 [INFO] Argument:277 - Argument : PeriphBurstvalue: null
+2019-12-24 21:07:05,422 [INFO] Argument:287 - Argument : PeriphBurstvalue: null
+2019-12-24 21:07:05,422 [INFO] Argument:277 - Argument : Lockvalue: null
+2019-12-24 21:07:05,422 [INFO] Argument:287 - Argument : Lockvalue: null
+2019-12-24 21:07:05,422 [INFO] Argument:277 - Argument : Statevalue: null
+2019-12-24 21:07:05,422 [INFO] Argument:287 - Argument : Statevalue: null
+2019-12-24 21:07:05,422 [INFO] Argument:277 - Argument : Parentvalue: null
+2019-12-24 21:07:05,422 [INFO] Argument:287 - Argument : Parentvalue: null
+2019-12-24 21:07:05,422 [INFO] Argument:277 - Argument : XferCpltCallbackvalue: null
+2019-12-24 21:07:05,422 [INFO] Argument:287 - Argument : XferCpltCallbackvalue: null
+2019-12-24 21:07:05,422 [INFO] Argument:277 - Argument : XferHalfCpltCallbackvalue: null
+2019-12-24 21:07:05,422 [INFO] Argument:287 - Argument : XferHalfCpltCallbackvalue: null
+2019-12-24 21:07:05,423 [INFO] Argument:277 - Argument : XferM1CpltCallbackvalue: null
+2019-12-24 21:07:05,423 [INFO] Argument:287 - Argument : XferM1CpltCallbackvalue: null
+2019-12-24 21:07:05,423 [INFO] Argument:277 - Argument : XferErrorCallbackvalue: null
+2019-12-24 21:07:05,423 [INFO] Argument:287 - Argument : XferErrorCallbackvalue: null
+2019-12-24 21:07:05,423 [INFO] Argument:277 - Argument : ErrorCodevalue: null
+2019-12-24 21:07:05,423 [INFO] Argument:287 - Argument : ErrorCodevalue: null
+2019-12-24 21:07:05,525 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\license.tmp_save
+2019-12-24 21:07:05,571 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\license.tmp
+2019-12-24 21:07:05,596 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\gpio.c_save
+2019-12-24 21:07:05,667 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\gpio.c
+2019-12-24 21:07:05,699 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\gpio.h_save
+2019-12-24 21:07:05,761 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\gpio.h
+2019-12-24 21:07:05,785 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 21:07:05,786 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for DMA
+2019-12-24 21:07:05,786 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 21:07:05,822 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\dma.c_save
+2019-12-24 21:07:05,889 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\dma.c
+2019-12-24 21:07:05,909 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\dma.h_save
+2019-12-24 21:07:05,962 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\dma.h
+2019-12-24 21:07:05,964 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 21:07:05,965 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-12-24 21:07:05,966 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 21:07:05,967 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 21:07:05,968 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-12-24 21:07:05,968 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 21:07:05,998 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\tim.c_save
+2019-12-24 21:07:06,079 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\tim.c
+2019-12-24 21:07:06,103 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\tim.h_save
+2019-12-24 21:07:06,158 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\tim.h
+2019-12-24 21:07:06,161 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-12-24 21:07:06,161 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 21:07:06,188 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_it.c_save
+2019-12-24 21:07:06,251 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_it.c
+2019-12-24 21:07:06,270 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_it.h_save
+2019-12-24 21:07:06,323 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_it.h
+2019-12-24 21:07:06,352 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_hal_msp.c_save
+2019-12-24 21:07:06,432 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_hal_msp.c
+2019-12-24 21:07:06,450 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\system.tmp_save
+2019-12-24 21:07:06,493 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\system.tmp
+2019-12-24 21:07:06,523 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_hal_conf.h_save
+2019-12-24 21:07:06,603 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_hal_conf.h
+2019-12-24 21:07:06,639 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\main.h_save
+2019-12-24 21:07:06,694 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\main.h
+2019-12-24 21:07:06,722 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\main.c_save
+2019-12-24 21:07:06,850 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\main.c
+2019-12-24 21:07:07,245 [INFO] ProjectBuilder:1500 - Time for Copy HAL[1] : 143mS.
+2019-12-24 21:07:07,246 [INFO] ProjectBuilder:2068 - Project Generator version: 3.3.0
+2019-12-24 21:07:07,401 [INFO] ConfigFileManager:883 - The Die is : DIE421
+2019-12-24 21:07:07,408 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] configName ==Arm Cortex-M4
+2019-12-24 21:07:07,478 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="RAM" access="xrw" start="0x20000000" size="128"
+2019-12-24 21:07:07,479 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="FLASH" access="rx" start="0x8000000" size="512"
+2019-12-24 21:07:07,571 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] namefile= STM32CubeIDE
+2019-12-24 21:07:07,572 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] method name===============update
+2019-12-24 21:07:07,941 [INFO] ProjectBuilder:2161 - Time for Generating toolchain IDE Files: 695mS.
+2019-12-24 21:07:07,942 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 1mS.
+2019-12-24 21:07:07,944 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 0mS.
+2019-12-24 21:13:13,919 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 491300520 Bytes (1073741824)
+2019-12-24 21:13:15,559 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 502258616 Bytes (1073741824)
+2019-12-24 21:13:15,662 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: TIM1_8
+2019-12-24 21:13:15,662 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: SYS
+2019-12-24 21:13:15,662 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: RCC
+2019-12-24 21:13:15,662 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: NVIC
+2019-12-24 21:13:15,662 [INFO] BlockDiagram:1879 - set Specific Code input for plugin: DMA
+2019-12-24 21:13:15,663 [INFO] CodeGenerator:572 - code generatio: config db path: C:\ST\STM32CubeIDE_1.0.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_1.0.0.201906050926\\db\
+2019-12-24 21:13:15,678 [INFO] Argument:277 - Argument : hdmavalue: null
+2019-12-24 21:13:15,678 [INFO] Argument:279 - 	 sub Args: 
+2019-12-24 21:13:15,678 [INFO] Argument:277 - Argument : Instancevalue: DMA2_Stream1
+2019-12-24 21:13:15,678 [INFO] Argument:287 - Argument : Instancevalue: DMA2_Stream1
+2019-12-24 21:13:15,678 [INFO] Argument:277 - Argument : Initvalue: null
+2019-12-24 21:13:15,678 [INFO] Argument:279 - 	 sub Args: 
+2019-12-24 21:13:15,678 [INFO] Argument:277 - Argument : Channelvalue: DMA_CHANNEL_6
+2019-12-24 21:13:15,678 [INFO] Argument:287 - Argument : Channelvalue: DMA_CHANNEL_6
+2019-12-24 21:13:15,678 [INFO] Argument:277 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2019-12-24 21:13:15,678 [INFO] Argument:287 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2019-12-24 21:13:15,678 [INFO] Argument:277 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2019-12-24 21:13:15,678 [INFO] Argument:287 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2019-12-24 21:13:15,678 [INFO] Argument:277 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2019-12-24 21:13:15,678 [INFO] Argument:287 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2019-12-24 21:13:15,678 [INFO] Argument:277 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2019-12-24 21:13:15,679 [INFO] Argument:287 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2019-12-24 21:13:15,679 [INFO] Argument:277 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2019-12-24 21:13:15,679 [INFO] Argument:287 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2019-12-24 21:13:15,679 [INFO] Argument:277 - Argument : Modevalue: DMA_CIRCULAR
+2019-12-24 21:13:15,679 [INFO] Argument:287 - Argument : Modevalue: DMA_CIRCULAR
+2019-12-24 21:13:15,679 [INFO] Argument:277 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2019-12-24 21:13:15,679 [INFO] Argument:287 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2019-12-24 21:13:15,679 [INFO] Argument:277 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2019-12-24 21:13:15,679 [INFO] Argument:287 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2019-12-24 21:13:15,679 [INFO] Argument:277 - Argument : FIFOThresholdvalue: null
+2019-12-24 21:13:15,679 [INFO] Argument:287 - Argument : FIFOThresholdvalue: null
+2019-12-24 21:13:15,679 [INFO] Argument:277 - Argument : MemBurstvalue: null
+2019-12-24 21:13:15,679 [INFO] Argument:287 - Argument : MemBurstvalue: null
+2019-12-24 21:13:15,679 [INFO] Argument:277 - Argument : PeriphBurstvalue: null
+2019-12-24 21:13:15,679 [INFO] Argument:287 - Argument : PeriphBurstvalue: null
+2019-12-24 21:13:15,679 [INFO] Argument:277 - Argument : Lockvalue: null
+2019-12-24 21:13:15,679 [INFO] Argument:287 - Argument : Lockvalue: null
+2019-12-24 21:13:15,679 [INFO] Argument:277 - Argument : Statevalue: null
+2019-12-24 21:13:15,680 [INFO] Argument:287 - Argument : Statevalue: null
+2019-12-24 21:13:15,680 [INFO] Argument:277 - Argument : Parentvalue: null
+2019-12-24 21:13:15,680 [INFO] Argument:287 - Argument : Parentvalue: null
+2019-12-24 21:13:15,680 [INFO] Argument:277 - Argument : XferCpltCallbackvalue: null
+2019-12-24 21:13:15,680 [INFO] Argument:287 - Argument : XferCpltCallbackvalue: null
+2019-12-24 21:13:15,680 [INFO] Argument:277 - Argument : XferHalfCpltCallbackvalue: null
+2019-12-24 21:13:15,680 [INFO] Argument:287 - Argument : XferHalfCpltCallbackvalue: null
+2019-12-24 21:13:15,680 [INFO] Argument:277 - Argument : XferM1CpltCallbackvalue: null
+2019-12-24 21:13:15,680 [INFO] Argument:287 - Argument : XferM1CpltCallbackvalue: null
+2019-12-24 21:13:15,680 [INFO] Argument:277 - Argument : XferErrorCallbackvalue: null
+2019-12-24 21:13:15,680 [INFO] Argument:287 - Argument : XferErrorCallbackvalue: null
+2019-12-24 21:13:15,680 [INFO] Argument:277 - Argument : ErrorCodevalue: null
+2019-12-24 21:13:15,680 [INFO] Argument:287 - Argument : ErrorCodevalue: null
+2019-12-24 21:13:15,783 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\license.tmp_save
+2019-12-24 21:13:15,829 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\license.tmp
+2019-12-24 21:13:15,852 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\gpio.c_save
+2019-12-24 21:13:15,906 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\gpio.c
+2019-12-24 21:13:15,925 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\gpio.h_save
+2019-12-24 21:13:15,977 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\gpio.h
+2019-12-24 21:13:15,996 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 21:13:15,997 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for DMA
+2019-12-24 21:13:15,997 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 21:13:16,026 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\dma.c_save
+2019-12-24 21:13:16,087 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\dma.c
+2019-12-24 21:13:16,106 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\dma.h_save
+2019-12-24 21:13:16,160 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\dma.h
+2019-12-24 21:13:16,163 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 21:13:16,164 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for SYS
+2019-12-24 21:13:16,164 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 21:13:16,165 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line
+2019-12-24 21:13:16,166 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2019-12-24 21:13:16,166 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 21:13:16,194 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\tim.c_save
+2019-12-24 21:13:16,267 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\tim.c
+2019-12-24 21:13:16,287 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\tim.h_save
+2019-12-24 21:13:16,338 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\tim.h
+2019-12-24 21:13:16,340 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2019-12-24 21:13:16,341 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] Command line test
+2019-12-24 21:13:16,366 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_it.c_save
+2019-12-24 21:13:16,431 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_it.c
+2019-12-24 21:13:16,450 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_it.h_save
+2019-12-24 21:13:16,502 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_it.h
+2019-12-24 21:13:16,531 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_hal_msp.c_save
+2019-12-24 21:13:16,603 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\stm32f4xx_hal_msp.c
+2019-12-24 21:13:16,629 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\system.tmp_save
+2019-12-24 21:13:16,683 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\MXTmpFiles\system.tmp
+2019-12-24 21:13:16,721 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_hal_conf.h_save
+2019-12-24 21:13:16,806 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\stm32f4xx_hal_conf.h
+2019-12-24 21:13:16,846 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\main.h_save
+2019-12-24 21:13:16,906 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Inc\main.h
+2019-12-24 21:13:16,937 [INFO] CodeEngine:190 - oldGeneratedFile, C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\main.c_save
+2019-12-24 21:13:17,027 [INFO] CodeEngine:208 - Generated code: C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\Src\main.c
+2019-12-24 21:13:17,710 [INFO] ProjectBuilder:1500 - Time for Copy HAL[1] : 157mS.
+2019-12-24 21:13:17,713 [INFO] ProjectBuilder:2068 - Project Generator version: 3.3.0
+2019-12-24 21:13:17,895 [INFO] ConfigFileManager:883 - The Die is : DIE421
+2019-12-24 21:13:17,903 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] configName ==Arm Cortex-M4
+2019-12-24 21:13:17,985 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="RAM" access="xrw" start="0x20000000" size="128"
+2019-12-24 21:13:17,986 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] memory ==name="FLASH" access="rx" start="0x8000000" size="512"
+2019-12-24 21:13:18,132 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] namefile= STM32CubeIDE
+2019-12-24 21:13:18,133 [INFO] LogOutputStream:68 - [STDOUT_REDIRECT] method name===============update
+2019-12-24 21:13:18,405 [INFO] ProjectBuilder:2161 - Time for Generating toolchain IDE Files: 693mS.
+2019-12-24 21:13:18,406 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 1mS.
+2019-12-24 21:13:18,409 [INFO] ProjectBuilder:1391 - Time for Copy CMSIS : 0mS.

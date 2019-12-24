@@ -1,0 +1,18 @@
+/*
+ * ws2812.h
+ *
+ *  Created on: Dec 24, 2019
+ *      Author: colson
+ */
+
+
+
+#include "main.h"
+#include "stdio.h"
+#include "stdlib.h"
+
+typedef int BOOL;
+
+BOOL ws2812Init(void);
+void ws2812Begin(uint32_t led_cnt);
+void ws2812SetColor(uint32_t index, uint8_t red, uint8_t green, uint8_t blue);

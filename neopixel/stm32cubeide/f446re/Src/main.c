@@ -20,11 +20,13 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "dma.h"
+#include "tim.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "ws2812.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -88,22 +90,53 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
+  MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
 
+
+  uint32_t nowtick;
+  uint32_t pasttick;
+  uint32_t led_index = 0;
+  int32_t led_index_pre = -1;
+  uint8_t led_color = 0;
+  ws2812Begin(8);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
-  {
+    while (1)
+    {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_SET);
+  	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, GPIO_PIN_SET);
 
-	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_8);
-	  HAL_Delay(500);
-  }
+  	  nowtick = HAL_GetTick();
+
+		if (nowtick - pasttick > 50) {
+
+			if (led_color == 0)
+				ws2812SetColor(led_index, 255, 0, 0);
+			if (led_color == 1)
+				ws2812SetColor(led_index, 0, 255, 0);
+			if (led_color == 2)
+				ws2812SetColor(led_index, 0, 0, 255);
+
+			if (led_index_pre >= 0) {
+				ws2812SetColor(led_index_pre, 0, 0, 0);
+			}
+			led_index_pre = led_index;
+			led_index = (led_index + 1) % 8;
+
+			if (led_index == 0) {
+				led_color = (led_color + 1) % 3;
+			}
+			pasttick = nowtick;
+		}
+
+  	  HAL_Delay(500);
+    }
   /* USER CODE END 3 */
 }
 
@@ -127,17 +160,11 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLM = 8;
-  RCC_OscInitStruct.PLL.PLLN = 180;
+  RCC_OscInitStruct.PLL.PLLN = 160;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
   RCC_OscInitStruct.PLL.PLLQ = 2;
   RCC_OscInitStruct.PLL.PLLR = 2;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /** Activate the Over-Drive mode 
-  */
-  if (HAL_PWREx_EnableOverDrive() != HAL_OK)
   {
     Error_Handler();
   }
