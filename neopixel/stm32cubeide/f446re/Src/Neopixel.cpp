@@ -46,9 +46,9 @@
 			blue <<= 1;
 		}
 
-		led_buf[(50+index * 24 + 8 * 0)] = red;
-		led_buf[(50+index * 24 + 8 * 1)] = green;
-		led_buf[(50+index * 24 + 8 * 2)] = blue;
+		led_buf[(50+/*index * 24 */+ 8 * 0)] = red;
+		led_buf[(50+/*index * 24 */+ 8 * 1)] = green;
+		led_buf[(50+/*index * 24 */+ 8 * 2)] = blue;
 	}
 	void Neopixel::SetColor(uint32_t index, uint8_t red, uint8_t green, uint8_t blue, uint8_t white)
 	{

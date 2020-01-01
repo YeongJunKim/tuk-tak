@@ -27,7 +27,7 @@ typedef struct
   uint16_t led_cnt;
 } ws2812_t;
 
-static uint8_t led_buf[50 + 24*64];
+static uint32_t led_buf[100 + 24 * 8];
 
 
 ws2812_t ws2812;
@@ -47,17 +47,19 @@ BOOL ws2812Init(void)
 
 void ws2812Begin(uint32_t led_cnt)
 {
-  ws2812.led_cnt = led_cnt;
 
-
-  HAL_TIM_PWM_Start_DMA(&htim1, TIM_CHANNEL_1, (uint32_t *)led_buf, (50 + 24 * led_cnt) * 1);
+  HAL_TIM_PWM_Start_DMA(&htim1, TIM_CHANNEL_1, (uint32_t *)led_buf, (100 +  24 * 8));
+  for(int i = 0 ; i < 100; i ++)
+  {
+	  led_buf[i] = 0;
+  }
 }
 
 void ws2812SetColor(uint32_t index, uint8_t red, uint8_t green, uint8_t blue)
 {
-  uint8_t r_bit[8];
-  uint8_t g_bit[8];
-  uint8_t b_bit[8];
+  uint32_t r_bit[8];
+  uint32_t g_bit[8];
+  uint32_t b_bit[8];
 
   uint32_t offset;
 
@@ -66,38 +68,43 @@ void ws2812SetColor(uint32_t index, uint8_t red, uint8_t green, uint8_t blue)
   {
     if (red & (1<<7))
     {
-      r_bit[i] = BIT_HIGH;
+      r_bit[i] = 56;
     }
     else
     {
-      r_bit[i] = BIT_LOW;
+      r_bit[i] = 28;
     }
     red <<= 1;
 
     if (green & (1<<7))
     {
-      g_bit[i] = BIT_HIGH;
+      g_bit[i] = 56;
     }
     else
     {
-      g_bit[i] = BIT_LOW;
+      g_bit[i] = 28;
     }
     green <<= 1;
 
     if (blue & (1<<7))
     {
-      b_bit[i] = BIT_HIGH;
+      b_bit[i] = 56;
     }
     else
     {
-      b_bit[i] = BIT_LOW;
+      b_bit[i] = 28;
     }
     blue <<= 1;
   }
 
-  offset = 50;
-
-  memcpy(&led_buf[offset + index*24 + 8*0], g_bit, 8*1);
-  memcpy(&led_buf[offset + index*24 + 8*1], r_bit, 8*1);
-  memcpy(&led_buf[offset + index*24 + 8*2], b_bit, 8*1);
+  offset = 100;
+  for(int i = 0 ; i < 8; i ++)
+  {
+	  led_buf[offset + index*24 + i] 		= g_bit[i];
+	  led_buf[offset + index*24 + 8 +  i] 	= r_bit[i];
+	  led_buf[offset + index*24 + 16 + i] 	= b_bit[i];
+  }
+//  memcpy(&led_buf[offset + index*24 + 8*0], g_bit, 8*1);
+//  memcpy(&led_buf[offset + index*24 + 8*1], r_bit, 8*1);
+//  memcpy(&led_buf[offset + index*24 + 8*2], b_bit, 8*1);
 }

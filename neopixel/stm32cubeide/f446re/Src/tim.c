@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2019 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under BSD 3-Clause license,
@@ -95,8 +95,8 @@ void HAL_TIM_PWM_MspInit(TIM_HandleTypeDef* tim_pwmHandle)
     hdma_tim1_ch1.Init.Direction = DMA_MEMORY_TO_PERIPH;
     hdma_tim1_ch1.Init.PeriphInc = DMA_PINC_DISABLE;
     hdma_tim1_ch1.Init.MemInc = DMA_MINC_ENABLE;
-    hdma_tim1_ch1.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
-    hdma_tim1_ch1.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+    hdma_tim1_ch1.Init.PeriphDataAlignment = DMA_PDATAALIGN_WORD;
+    hdma_tim1_ch1.Init.MemDataAlignment = DMA_MDATAALIGN_WORD;
     hdma_tim1_ch1.Init.Mode = DMA_CIRCULAR;
     hdma_tim1_ch1.Init.Priority = DMA_PRIORITY_LOW;
     hdma_tim1_ch1.Init.FIFOMode = DMA_FIFOMODE_DISABLE;

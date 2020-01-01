@@ -101,6 +101,8 @@ int main(void)
   int32_t led_index_pre = -1;
   uint8_t led_color = 0;
   ws2812Begin(8);
+
+  uint32_t step = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -116,26 +118,37 @@ int main(void)
 
 		if (nowtick - pasttick > 50) {
 
-			if (led_color == 0)
-				ws2812SetColor(led_index, 255, 0, 0);
-			if (led_color == 1)
-				ws2812SetColor(led_index, 0, 255, 0);
-			if (led_color == 2)
-				ws2812SetColor(led_index, 0, 0, 255);
+//			for( uint32_t i = 0 ; i < 8; i ++)
+//			{
+//				if (led_color == 0)
+//					ws2812SetColor(i, 255, 0, 0);
+//				if (led_color == 1)
+//					ws2812SetColor(i, 0, 255, 0);
+//				if (led_color == 2)
+//					ws2812SetColor(i, 0, 0, 255);
+//			}
+//			led_index = 0;//(led_index + 1) % 8;
+//
+//			if (led_index == 0) {
+//				led_color = (led_color + 1) % 3;
+//			}
 
-			if (led_index_pre >= 0) {
-				ws2812SetColor(led_index_pre, 0, 0, 0);
-			}
-			led_index_pre = led_index;
-			led_index = (led_index + 1) % 8;
 
-			if (led_index == 0) {
-				led_color = (led_color + 1) % 3;
+			for(uint32_t i = 0; i < 8; i ++)
+			{
+				if(step == i)
+					ws2812SetColor(i, 255, 255, 255);
+				else
+					ws2812SetColor(i, 5, 5, 5);
 			}
+
+
+			step++;
+			if(step == 8)
+				step = 0;
+
 			pasttick = nowtick;
 		}
-
-  	  HAL_Delay(500);
     }
   /* USER CODE END 3 */
 }
@@ -152,7 +165,7 @@ void SystemClock_Config(void)
   /** Configure the main internal regulator output voltage 
   */
   __HAL_RCC_PWR_CLK_ENABLE();
-  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE3);
   /** Initializes the CPU, AHB and APB busses clocks 
   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
@@ -160,7 +173,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLM = 8;
-  RCC_OscInitStruct.PLL.PLLN = 160;
+  RCC_OscInitStruct.PLL.PLLN = 80;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
   RCC_OscInitStruct.PLL.PLLQ = 2;
   RCC_OscInitStruct.PLL.PLLR = 2;
@@ -174,10 +187,10 @@ void SystemClock_Config(void)
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV4;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
   {
     Error_Handler();
   }

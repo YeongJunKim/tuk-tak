@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Users/colson/Desktop/workspace/tuk-tak/neopixel/stm32cubeide/f446re/Inc
+HeaderPath=C:/Users/dud37/Desktop/workspace/tuk-tak/neopixel/stm32cubeide/f446re/Inc
 HeaderFiles=stm32f4xx_it.h;stm32f4xx_hal_conf.h;main.h;gpio.h;tim.h;dma.h;
-SourcePath=C:/Users/colson/Desktop/workspace/tuk-tak/neopixel/stm32cubeide/f446re/Src
+SourcePath=C:/Users/dud37/Desktop/workspace/tuk-tak/neopixel/stm32cubeide/f446re/Src
 SourceFiles=stm32f4xx_it.c;stm32f4xx_hal_msp.c;main.c;gpio.c;tim.c;dma.c;
 
 [PreviousLibFiles]
