@@ -3734,3 +3734,426 @@ Finished building: default.size.stdout
  
 Finished building: f446re.list
  
+21:00:03 **** Build of configuration Debug for project f446re ****
+make -j4 all 
+arm-none-eabi-g++ "../Src/Neopixel.cpp" -mcpu=cortex-m4 -std=gnu++14 -g -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-threadsafe-statics -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Src/Neopixel.d" -MT"Src/Neopixel.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/Neopixel.o"
+arm-none-eabi-gcc "../Src/dma.c" -mcpu=cortex-m4 -std=gnu11 -g -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/dma.d" -MT"Src/dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/dma.o"
+arm-none-eabi-gcc "../Src/gpio.c" -mcpu=cortex-m4 -std=gnu11 -g -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/gpio.d" -MT"Src/gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/gpio.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/Neopixel.cpp: In member function 'void Neopixel::SetColor(uint32_t, uint8_t, uint8_t, uint8_t)':
+../Src/Neopixel.cpp:27:11: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+   uint8_t r[8];
+           ^
+../Src/Neopixel.cpp:28:11: warning: variable 'g' set but not used [-Wunused-but-set-variable]
+   uint8_t g[8];
+           ^
+../Src/Neopixel.cpp:29:11: warning: variable 'b' set but not used [-Wunused-but-set-variable]
+   uint8_t b[8];
+           ^
+arm-none-eabi-gcc "../Src/tim.c" -mcpu=cortex-m4 -std=gnu11 -g -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/tim.d" -MT"Src/tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/tim.o"
+arm-none-eabi-gcc "../Src/ws2812.c" -mcpu=cortex-m4 -std=gnu11 -g -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/ws2812.d" -MT"Src/ws2812.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/ws2812.o"
+../Src/main.c: In function 'main':
+../Src/main.c:102:11: warning: unused variable 'led_color' [-Wunused-variable]
+   uint8_t led_color = 0;
+           ^~~~~~~~~
+../Src/main.c:101:11: warning: unused variable 'led_index_pre' [-Wunused-variable]
+   int32_t led_index_pre = -1;
+           ^~~~~~~~~~~~~
+../Src/main.c:100:12: warning: unused variable 'led_index' [-Wunused-variable]
+   uint32_t led_index = 0;
+            ^~~~~~~~~
+arm-none-eabi-g++ -o "f446re.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f446re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: f446re.elf
+ 
+arm-none-eabi-objdump -h -S  f446re.elf  > "f446re.list"
+arm-none-eabi-size   f446re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12168	     20	   4436	  16624	   40f0	f446re.elf
+Finished building: default.size.stdout
+ 
+Finished building: f446re.list
+ 
+21:00:43 **** Incremental Build of configuration Debug for project f446re ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:102:11: warning: unused variable 'led_color' [-Wunused-variable]
+   uint8_t led_color = 0;
+           ^~~~~~~~~
+../Src/main.c:101:11: warning: unused variable 'led_index_pre' [-Wunused-variable]
+   int32_t led_index_pre = -1;
+           ^~~~~~~~~~~~~
+../Src/main.c:100:12: warning: unused variable 'led_index' [-Wunused-variable]
+   uint32_t led_index = 0;
+            ^~~~~~~~~
+arm-none-eabi-g++ -o "f446re.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f446re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: f446re.elf
+ 
+arm-none-eabi-objdump -h -S  f446re.elf  > "f446re.list"
+arm-none-eabi-size   f446re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12168	     20	   4436	  16624	   40f0	f446re.elf
+Finished building: default.size.stdout
+ 
+Finished building: f446re.list
+ 
+21:01:05 **** Incremental Build of configuration Debug for project f446re ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:102:11: warning: unused variable 'led_color' [-Wunused-variable]
+   uint8_t led_color = 0;
+           ^~~~~~~~~
+../Src/main.c:101:11: warning: unused variable 'led_index_pre' [-Wunused-variable]
+   int32_t led_index_pre = -1;
+           ^~~~~~~~~~~~~
+../Src/main.c:100:12: warning: unused variable 'led_index' [-Wunused-variable]
+   uint32_t led_index = 0;
+            ^~~~~~~~~
+arm-none-eabi-g++ -o "f446re.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f446re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: f446re.elf
+ 
+arm-none-eabi-objdump -h -S  f446re.elf  > "f446re.list"
+arm-none-eabi-size   f446re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12168	     20	   4436	  16624	   40f0	f446re.elf
+Finished building: default.size.stdout
+ 
+Finished building: f446re.list
+ 
+21:03:47 **** Incremental Build of configuration Debug for project f446re ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:102:11: warning: unused variable 'led_color' [-Wunused-variable]
+   uint8_t led_color = 0;
+           ^~~~~~~~~
+../Src/main.c:101:11: warning: unused variable 'led_index_pre' [-Wunused-variable]
+   int32_t led_index_pre = -1;
+           ^~~~~~~~~~~~~
+../Src/main.c:100:12: warning: unused variable 'led_index' [-Wunused-variable]
+   uint32_t led_index = 0;
+            ^~~~~~~~~
+arm-none-eabi-g++ -o "f446re.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f446re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: f446re.elf
+ 
+arm-none-eabi-objdump -h -S  f446re.elf  > "f446re.list"
+arm-none-eabi-size   f446re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12192	     20	   4436	  16648	   4108	f446re.elf
+Finished building: default.size.stdout
+ 
+Finished building: f446re.list
+ 
+21:04:03 **** Incremental Build of configuration Debug for project f446re ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:102:11: warning: unused variable 'led_color' [-Wunused-variable]
+   uint8_t led_color = 0;
+           ^~~~~~~~~
+../Src/main.c:101:11: warning: unused variable 'led_index_pre' [-Wunused-variable]
+   int32_t led_index_pre = -1;
+           ^~~~~~~~~~~~~
+../Src/main.c:100:12: warning: unused variable 'led_index' [-Wunused-variable]
+   uint32_t led_index = 0;
+            ^~~~~~~~~
+arm-none-eabi-g++ -o "f446re.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f446re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: f446re.elf
+ 
+arm-none-eabi-objdump -h -S  f446re.elf  > "f446re.list"
+arm-none-eabi-size   f446re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12192	     20	   4436	  16648	   4108	f446re.elf
+Finished building: default.size.stdout
+ 
+Finished building: f446re.list
+ 
+21:05:30 **** Incremental Build of configuration Debug for project f446re ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:102:11: warning: unused variable 'led_color' [-Wunused-variable]
+   uint8_t led_color = 0;
+           ^~~~~~~~~
+../Src/main.c:101:11: warning: unused variable 'led_index_pre' [-Wunused-variable]
+   int32_t led_index_pre = -1;
+           ^~~~~~~~~~~~~
+../Src/main.c:100:12: warning: unused variable 'led_index' [-Wunused-variable]
+   uint32_t led_index = 0;
+            ^~~~~~~~~
+arm-none-eabi-g++ -o "f446re.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f446re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: f446re.elf
+ 
+arm-none-eabi-objdump -h -S  f446re.elf  > "f446re.list"
+arm-none-eabi-size   f446re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12188	     20	   4436	  16644	   4104	f446re.elf
+Finished building: default.size.stdout
+ 
+Finished building: f446re.list
+ 
+21:06:14 **** Incremental Build of configuration Debug for project f446re ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:102:11: warning: unused variable 'led_color' [-Wunused-variable]
+   uint8_t led_color = 0;
+           ^~~~~~~~~
+../Src/main.c:101:11: warning: unused variable 'led_index_pre' [-Wunused-variable]
+   int32_t led_index_pre = -1;
+           ^~~~~~~~~~~~~
+../Src/main.c:100:12: warning: unused variable 'led_index' [-Wunused-variable]
+   uint32_t led_index = 0;
+            ^~~~~~~~~
+arm-none-eabi-g++ -o "f446re.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f446re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: f446re.elf
+ 
+arm-none-eabi-objdump -h -S  f446re.elf  > "f446re.list"
+arm-none-eabi-size   f446re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12188	     20	   4436	  16644	   4104	f446re.elf
+Finished building: default.size.stdout
+ 
+Finished building: f446re.list
+ 
+09:06:44 **** Incremental Build of configuration Debug for project f446re ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:102:11: warning: unused variable 'led_color' [-Wunused-variable]
+   uint8_t led_color = 0;
+           ^~~~~~~~~
+../Src/main.c:101:11: warning: unused variable 'led_index_pre' [-Wunused-variable]
+   int32_t led_index_pre = -1;
+           ^~~~~~~~~~~~~
+../Src/main.c:100:12: warning: unused variable 'led_index' [-Wunused-variable]
+   uint32_t led_index = 0;
+            ^~~~~~~~~
+arm-none-eabi-g++ -o "f446re.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f446re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: f446re.elf
+ 
+arm-none-eabi-objdump -h -S  f446re.elf  > "f446re.list"
+arm-none-eabi-size   f446re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12188	     20	   4436	  16644	   4104	f446re.elf
+Finished building: default.size.stdout
+ 
+Finished building: f446re.list
+ 
+09:12:22 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/ws2812.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/ws2812.d" -MT"Src/ws2812.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/ws2812.o"
+../Src/main.c: In function 'main':
+../Src/main.c:101:3: warning: implicit declaration of function 'ws2812Begin' [-Wimplicit-function-declaration]
+   ws2812Begin(8);
+   ^~~~~~~~~~~
+../Src/main.c:121:6: warning: implicit declaration of function 'ws2812SetColor' [-Wimplicit-function-declaration]
+      ws2812SetColor(i, 255, 0, 0);
+      ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/ws2812.o:C:/Users/colson/Desktop/workspace/tuk-tak/neopixel/stm32cubeide/f103c8/Debug/../Src/ws2812.c:22: multiple definition of `is_init'
+Src/main.o:C:/Users/colson/Desktop/workspace/tuk-tak/neopixel/stm32cubeide/f103c8/Debug/../Src/neopixel.h:25: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:47: f103c8.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+09:12:25 **** Incremental Build of configuration Debug for project f446re ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g -DUSE_HAL_DRIVER -DSTM32F446xx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-g++ -o "f446re.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f446re\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f446re.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: f446re.elf
+ 
+arm-none-eabi-objdump -h -S  f446re.elf  > "f446re.list"
+arm-none-eabi-size   f446re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12176	     20	   4436	  16632	   40f8	f446re.elf
+Finished building: default.size.stdout
+ 
+Finished building: f446re.list
+ 
+09:12:40 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:26:10: fatal error: neopixel.h: No such file or directory
+ #include "neopixel.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:36: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+09:12:42 **** Incremental Build of configuration Debug for project f446re ****
+make -j4 all 
+arm-none-eabi-size   f446re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12176	     20	   4436	  16632	   40f8	f446re.elf
+Finished building: default.size.stdout
+ 
+09:12:55 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:100:3: warning: implicit declaration of function 'ws2812Begin' [-Wimplicit-function-declaration]
+   ws2812Begin(8);
+   ^~~~~~~~~~~
+../Src/main.c:120:6: warning: implicit declaration of function 'ws2812SetColor' [-Wimplicit-function-declaration]
+      ws2812SetColor(i, 255, 0, 0);
+      ^~~~~~~~~~~~~~
+../Src/main.c:123:31: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+      uint8_t factor = 128 >> (abs(step-i)*2);
+                               ^~~
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9312	     20	   4404	  13736	   35a8	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.bin
+Finished building: f103c8.hex
+ 
+Finished building: f103c8.list
+ 
+ 
+09:12:58 **** Incremental Build of configuration Debug for project f446re ****
+make -j4 all 
+arm-none-eabi-size   f446re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12176	     20	   4436	  16632	   40f8	f446re.elf
+Finished building: default.size.stdout
+ 
+09:13:16 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9312	     20	   4404	  13736	   35a8	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.bin
+Finished building: f103c8.hex
+ 
+Finished building: f103c8.list
+ 
+ 
+09:13:18 **** Incremental Build of configuration Debug for project f446re ****
+make -j4 all 
+arm-none-eabi-size   f446re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12176	     20	   4436	  16632	   40f8	f446re.elf
+Finished building: default.size.stdout
+ 
+09:15:43 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c8tx.o" "../Startup/startup_stm32f103c8tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/stm32f1xx_hal_msp.d" -MT"Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/stm32f1xx_it.d" -MT"Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/system_stm32f1xx.d" -MT"Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/system_stm32f1xx.o"
+arm-none-eabi-gcc "../Src/ws2812.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/ws2812.d" -MT"Src/ws2812.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/ws2812.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9316	     20	   4404	  13740	   35ac	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.list
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+ 
+ 
+ 
+09:16:13 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9316	     20	   4404	  13740	   35ac	f103c8.elf
+Finished building: default.size.stdout
+ 
+09:21:36 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9316	     20	   4404	  13740	   35ac	f103c8.elf
+Finished building: default.size.stdout
+ 
+09:25:35 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/ws2812.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/ws2812.d" -MT"Src/ws2812.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/ws2812.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9316	     20	   4404	  13740	   35ac	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.bin
+Finished building: f103c8.hex
+Finished building: f103c8.list
+ 
+ 
+ 
+09:25:38 **** Incremental Build of configuration Debug for project f446re ****
+make -j4 all 
+arm-none-eabi-size   f446re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12176	     20	   4436	  16632	   40f8	f446re.elf
+Finished building: default.size.stdout
+ 
+09:26:29 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\colson\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9316	     20	   4404	  13740	   35ac	f103c8.elf
+Finished building: default.size.stdout
+Finished building: f103c8.hex
+Finished building: f103c8.list
+Finished building: f103c8.bin
+ 
+ 
+ 
+ 
+09:26:32 **** Incremental Build of configuration Debug for project f446re ****
+make -j4 all 
+arm-none-eabi-size   f446re.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12176	     20	   4436	  16632	   40f8	f446re.elf
+Finished building: default.size.stdout
+ 

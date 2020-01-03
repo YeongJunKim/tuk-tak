@@ -23,7 +23,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "neopixel.h"
+#include "ws2812.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -95,13 +96,12 @@ int main(void)
   MX_DMA_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
-  neopixel_init(1);
-  neopixel_begin();
-  neopixel_SetColor(1, 255, 255, 255, 0);
-  neopixel_SetColor(1, 255, 255, 0, 0);
-  uint8_t i = 100;
-  uint8_t j = 200;
-  uint8_t k = 50;
+
+  uint32_t nowTick = 0;
+  uint32_t pastTick = 0;
+  ws2812Begin(8);
+
+  uint32_t step = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -111,10 +111,29 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_12);
-	  HAL_Delay(1000);
-	  neopixel_SetColor(1, i++, j++, k++, 0);
-	  neopixel_begin();
+	  nowTick = HAL_GetTick();
+
+	  if(nowTick - pastTick > 100)
+	  {
+
+			for(uint32_t i = 0; i < 24; i ++)
+			{
+				if(step == i)
+					ws2812SetColor(i, 255, 255, 255);
+				else
+				{
+					uint8_t factor = 128 >> (abs(step-i)*2);
+					ws2812SetColor(i, factor, factor, factor);
+				}
+
+			}
+
+
+			step++;
+			if(step == 24)
+				step = 0;
+		  pastTick = nowTick;
+	  }
   }
   /* USER CODE END 3 */
 }

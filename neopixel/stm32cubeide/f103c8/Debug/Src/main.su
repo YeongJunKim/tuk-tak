@@ -1,10 +1,6 @@
-neopixel.h:36:6:neopixel_init	16	static
-neopixel.h:43:6:neopixel_pause	8	static
-neopixel.h:47:6:neopixel_begin	8	static
-neopixel.h:51:6:neopixel_SetColor	32	static
-main.c:70:5:main	24	static
-main.c:125:6:SystemClock_Config	72	static
-main.c:163:13:MX_TIM1_Init	72	static
-main.c:226:13:MX_DMA_Init	16	static
-main.c:243:13:MX_GPIO_Init	40	static
-main.c:272:6:Error_Handler	4	static
+main.c:71:5:main	32	static
+main.c:145:6:SystemClock_Config	72	static
+main.c:183:13:MX_TIM1_Init	72	static
+main.c:246:13:MX_DMA_Init	16	static
+main.c:263:13:MX_GPIO_Init	40	static
+main.c:292:6:Error_Handler	4	static

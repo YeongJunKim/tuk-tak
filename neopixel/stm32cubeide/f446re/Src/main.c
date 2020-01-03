@@ -97,9 +97,6 @@ int main(void)
 
   uint32_t nowtick;
   uint32_t pasttick;
-  uint32_t led_index = 0;
-  int32_t led_index_pre = -1;
-  uint8_t led_color = 0;
   ws2812Begin(8);
 
   uint32_t step = 0;
@@ -116,7 +113,7 @@ int main(void)
 
   	  nowtick = HAL_GetTick();
 
-		if (nowtick - pasttick > 50) {
+		if (nowtick - pasttick > 10) {
 
 //			for( uint32_t i = 0 ; i < 8; i ++)
 //			{
@@ -134,17 +131,21 @@ int main(void)
 //			}
 
 
-			for(uint32_t i = 0; i < 8; i ++)
+			for(uint32_t i = 0; i < 24; i ++)
 			{
 				if(step == i)
-					ws2812SetColor(i, 255, 255, 255);
+					ws2812SetColor(i, 255, 0, 0);
 				else
-					ws2812SetColor(i, 5, 5, 5);
+				{
+					uint8_t factor = 128 >> (abs(step-i)*2);
+					ws2812SetColor(i, factor, factor, factor);
+				}
+
 			}
 
 
 			step++;
-			if(step == 8)
+			if(step == 24)
 				step = 0;
 
 			pasttick = nowtick;

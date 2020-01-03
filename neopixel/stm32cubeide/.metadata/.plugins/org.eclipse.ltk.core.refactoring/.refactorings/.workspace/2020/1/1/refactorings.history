@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;f103c8/Src/neopixel.h&apos;" deleteContents="false" description="Delete resource &apos;f103c8/Src/neopixel.h&apos;" element1="/f103c8/Src/neopixel.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1578010359663"/>
+</session>
