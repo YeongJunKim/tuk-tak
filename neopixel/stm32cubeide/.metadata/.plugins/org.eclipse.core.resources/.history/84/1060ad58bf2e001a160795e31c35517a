@@ -113,7 +113,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  nowTick = HAL_GetTick();
 
-	  if(nowTick - pastTick > 30)
+	  if(nowTick - pastTick > 100)
 	  {
 
 //			for(uint32_t i = 0; i < 16; i ++)
@@ -127,12 +127,12 @@ int main(void)
 //
 //			}
 		  if(step == 1)
-		  for(uint32_t i = 0; i < 17; i ++)
+		  for(uint32_t i = 0; i < 16; i ++)
 		  {
 				ws2812SetColor(i, 255, 255, 255);
 		  }
 		  if(step == 2)
-		  for(uint32_t i = 0; i < 17; i ++)
+		  for(uint32_t i = 0; i < 16; i ++)
 		  {
 				ws2812SetColor(i, 0, 0, 0);
 		  }

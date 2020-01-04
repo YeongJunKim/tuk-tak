@@ -113,7 +113,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  nowTick = HAL_GetTick();
 
-	  if(nowTick - pastTick > 30)
+	  if(nowTick - pastTick > 50)
 	  {
 
 //			for(uint32_t i = 0; i < 16; i ++)

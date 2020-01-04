@@ -1,4 +1,4 @@
-09:26:32 **** Incremental Build of configuration Debug for project f446re ****
+15:58:00 **** Incremental Build of configuration Debug for project f446re ****
 make -j4 all 
 arm-none-eabi-size   f446re.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size   f446re.elf
 Finished building: default.size.stdout
  
 
-09:26:33 Build Finished. 0 errors, 0 warnings. (took 1s.392ms)
+15:58:01 Build Finished. 0 errors, 0 warnings. (took 1s.457ms)
 

@@ -12,8 +12,8 @@
 
 
 #define BIT_PERIOD      (104)
-#define BIT_HIGH        (56)
-#define BIT_LOW         (28)
+#define BIT_HIGH        (40)
+#define BIT_LOW         (20)
 
 
 #define false 0
@@ -68,31 +68,31 @@ void ws2812SetColor(uint32_t index, uint8_t red, uint8_t green, uint8_t blue)
   {
     if (red & (1<<7))
     {
-      r_bit[i] = BIT_HIGH;
+      r_bit[i] = 56;
     }
     else
     {
-      r_bit[i] = BIT_LOW;
+      r_bit[i] = 28;
     }
     red <<= 1;
 
     if (green & (1<<7))
     {
-      g_bit[i] = BIT_HIGH;
+      g_bit[i] = 56;
     }
     else
     {
-      g_bit[i] = BIT_LOW;
+      g_bit[i] = 28;
     }
     green <<= 1;
 
     if (blue & (1<<7))
     {
-      b_bit[i] = BIT_HIGH;
+      b_bit[i] = 56;
     }
     else
     {
-      b_bit[i] = BIT_LOW;
+      b_bit[i] = 28;
     }
     blue <<= 1;
   }
