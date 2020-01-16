@@ -46,6 +46,8 @@
 TIM_HandleTypeDef htim1;
 DMA_HandleTypeDef hdma_tim1_ch1;
 
+UART_HandleTypeDef huart1;
+
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -55,6 +57,7 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
 static void MX_TIM1_Init(void);
+static void MX_USART1_UART_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -62,6 +65,8 @@ static void MX_TIM1_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+uint8_t rcvData[10] = {0,};
+uint8_t sendData[10] = {0,};
 /* USER CODE END 0 */
 
 /**
@@ -95,6 +100,7 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_TIM1_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
   uint32_t nowTick = 0;
@@ -102,6 +108,7 @@ int main(void)
   ws2812Begin(8);
 
   uint32_t step = 0;
+  HAL_UART_Receive_IT(&huart1, rcvData, 1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -112,29 +119,24 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  nowTick = HAL_GetTick();
+	  HAL_UART_Receive_IT(&huart1, rcvData, 1);
 
-	  if(nowTick - pastTick > 30)
+
+	  if(nowTick - pastTick > 1000)
 	  {
-
-//			for(uint32_t i = 0; i < 16; i ++)
-//			{
-//				if(step == i)
-//					ws2812SetColor(i, 255, 255, 255);
-//				else
-//				{
-//					ws2812SetColor(i, 0, 0, 0);
-//				}
-//
-//			}
 		  if(step == 1)
 		  for(uint32_t i = 0; i < 17; i ++)
 		  {
-				ws2812SetColor(i, 255, 255, 255);
+			    sendData[0] = 0xFF;
+			    HAL_UART_Transmit(&huart1, sendData, 1, 0xFFFF);
+//				ws2812SetColor(i, 255, 255, 255);
 		  }
 		  if(step == 2)
 		  for(uint32_t i = 0; i < 17; i ++)
 		  {
-				ws2812SetColor(i, 0, 0, 0);
+			    sendData[0] = 0x00;
+			    HAL_UART_Transmit(&huart1, sendData, 1, 0xFFFF);
+//				ws2812SetColor(i, 0, 0, 0);
 		  }
 
 			step++;
@@ -248,6 +250,39 @@ static void MX_TIM1_Init(void)
 
 }
 
+/**
+  * @brief USART1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_USART1_UART_Init(void)
+{
+
+  /* USER CODE BEGIN USART1_Init 0 */
+
+  /* USER CODE END USART1_Init 0 */
+
+  /* USER CODE BEGIN USART1_Init 1 */
+
+  /* USER CODE END USART1_Init 1 */
+  huart1.Instance = USART1;
+  huart1.Init.BaudRate = 9600;
+  huart1.Init.WordLength = UART_WORDLENGTH_8B;
+  huart1.Init.StopBits = UART_STOPBITS_1;
+  huart1.Init.Parity = UART_PARITY_NONE;
+  huart1.Init.Mode = UART_MODE_TX_RX;
+  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart1.Init.OverSampling = UART_OVERSAMPLING_16;
+  if (HAL_UART_Init(&huart1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN USART1_Init 2 */
+
+  /* USER CODE END USART1_Init 2 */
+
+}
+
 /** 
   * Enable DMA controller clock
   */
@@ -291,6 +326,26 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+	if(huart->Instance == USART1)
+	{
+		if(rcvData[0] == 0xFF)
+		{
+			  for(uint32_t i = 0; i < 17; i ++)
+			  {
+					ws2812SetColor(i, 255, 255, 255);
+			  }
+		}
+		else
+		{
+			  for(uint32_t i = 0; i < 17; i ++)
+			  {
+					ws2812SetColor(i, 0, 0, 0);
+			  }
+		}
+	}
+}
 /* USER CODE END 4 */
 
 /**
