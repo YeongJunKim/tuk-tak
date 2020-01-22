@@ -113,13 +113,9 @@ int main(void)
   uint32_t step = 0;
   HAL_UART_Receive_IT(&huart1, rcvData, 1);
 
-//  HAL_TIMEx_PWMN_Start(&htim2, TIM_CHANNEL_1);
-//  HAL_TIMEx_PWMN_Start(&htim2, TIM_CHANNEL_2);
+  HAL_TIMEx_PWMN_Start(&htim2, TIM_CHANNEL_1);
+  HAL_TIMEx_PWMN_Start(&htim2, TIM_CHANNEL_2);
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
-  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2);
-
-  htim2.Instance->CCR1 = 150;
-  htim2.Instance->CCR2 = 170;
   /* USER CODE END 2 */
 
   /* Infinite loop */
