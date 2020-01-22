@@ -247,7 +247,7 @@ int main(void)
 	  {
 		  for(uint32_t i  = 0; i < 28 ; i++)
 		  {
-			  ws2812SetColor(i, 120, 120, 120);
+			  ws2812SetColor(i, 255, 255, 255);
 		  }
 	  }
 #else

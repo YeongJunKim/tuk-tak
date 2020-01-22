@@ -41,7 +41,7 @@
 #define TEST_CASE3 4 //circle
 #define TEST_CASE4 5 //turn on
 #define TEST_BLUETOOTH 4
-#define DEVICE TEST_CASE4
+#define DEVICE TEST_CASE2
 
 #define BLINK 0
 #define SMOOTH 1
@@ -247,7 +247,7 @@ int main(void)
 	  {
 		  for(uint32_t i  = 0; i < 28 ; i++)
 		  {
-			  ws2812SetColor(i, 120, 120, 120);
+			  ws2812SetColor(i, 255, 255, 255);
 		  }
 	  }
 #else
