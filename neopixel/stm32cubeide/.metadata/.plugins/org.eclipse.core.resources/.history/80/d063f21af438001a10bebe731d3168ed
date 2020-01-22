@@ -125,14 +125,14 @@ int main(void)
 	  if(nowTick - pastTick > 50)
 	  {
 		  if(step == 1)
-		  //for(uint32_t i = 0; i < 17; i ++)
+		  for(uint32_t i = 0; i < 17; i ++)
 		  {
 			    sendData[0] = 0xFF;
 			    HAL_UART_Transmit(&huart1, sendData, 1, 0xFFFF);
 //				ws2812SetColor(i, 255, 255, 255);
 		  }
 		  if(step == 2)
-		  //for(uint32_t i = 0; i < 17; i ++)
+		  for(uint32_t i = 0; i < 17; i ++)
 		  {
 			    sendData[0] = 0x00;
 			    HAL_UART_Transmit(&huart1, sendData, 1, 0xFFFF);
