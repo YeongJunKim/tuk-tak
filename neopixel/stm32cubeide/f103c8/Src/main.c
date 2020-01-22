@@ -34,7 +34,18 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define SHOOTER 0
+#define SHOLDER 1
+#define DEVICE SHOLDER
 
+#define SHOOTER_SERVO_MAX 1500
+#define SHOOTER_SERVO_MIN 1100
+
+#define SHOLDER_SERVO_MAX 1900
+#define SHOLDER_SERVO_MIN 1100
+
+#define HEAD_SERVO_MAX 1900
+#define HEAD_SERVO_MIN 1100
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -61,7 +72,7 @@ static void MX_TIM1_Init(void);
 static void MX_TIM2_Init(void);
 static void MX_USART1_UART_Init(void);
 /* USER CODE BEGIN PFP */
-
+void run_led_sequence(uint32_t count);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -69,6 +80,10 @@ static void MX_USART1_UART_Init(void);
 
 uint8_t rcvData[10] = {0,};
 uint8_t sendData[10] = {0,};
+
+uint8_t step = 0;
+uint8_t taskFlag = 0;
+uint32_t taskCount = 0;
 /* USER CODE END 0 */
 
 /**
@@ -110,7 +125,6 @@ int main(void)
   uint32_t pastTick = 0;
   ws2812Begin(8);
 
-  uint32_t step = 0;
   HAL_UART_Receive_IT(&huart1, rcvData, 1);
 
 //  HAL_TIMEx_PWMN_Start(&htim2, TIM_CHANNEL_1);
@@ -131,8 +145,62 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  nowTick = HAL_GetTick();
 	  HAL_UART_Receive_IT(&huart1, rcvData, 1);
+#if(DEVICE == SHOOTER)
+	  if(nowTick - pastTick > 50)	//0.1sec
+	  {
+		  if(taskFlag == 1)
+		  {
+			  taskCount++;
+			  //set servo motor
+			  htim2.Instance->CCR1 = SHOOTER_SERVO_MAX;
+			  //set led
+			  run_led_sequence(taskCount);
+		  }
+		  else
+		  {
+			  //reset all variables
+			  htim2.Instance->CCR1 = SHOOTER_SERVO_MIN;
+			  taskCount = 0;
+			  run_led_sequence(taskCount);
+		  }
+		  pastTick = nowTick;
+	  }
+#elif(DEVICE == SHOLDER)
+	  if(nowTick - pastTick > 50)	//0.1sec
+	  {
+		  if(taskFlag == 1)
+		  {
+			  taskCount++;
+			  //set servo motor
+			  if(((rcvData[0] >> 7) & 0x01) == 0x01)
+			  {
+				  htim2.Instance->CCR1 = SHOLDER_SERVO_MAX;
+				  //set led
+				  run_led_sequence(taskCount);
+			  }
+			  if(((rcvData[0]) & 0x01) == 0x01)
+			  {
+				  htim2.Instance->CCR2 = HEAD_SERVO_MAX;
+			  }
+		  }
+		  else
+		  {
+			  //reset all variables
+			  if(((rcvData[0] >> 7) & 0x01) != 0x01)
+			  {
+				  htim2.Instance->CCR1 = SHOLDER_SERVO_MIN;
+			  }
+			  if(((rcvData[0]) & 0x01) != 0x01)
+			  {
+				  htim2.Instance->CCR2 = HEAD_SERVO_MIN;
+			  }
+			  taskCount = 0;
+			  run_led_sequence(taskCount);
+		  }
+		  pastTick = nowTick;
+	  }
 
-
+#else
 	  if(nowTick - pastTick > 50)
 	  {
 		  if(step == 1)
@@ -155,6 +223,8 @@ int main(void)
 				step = 1;
 		  pastTick = nowTick;
 	  }
+
+#endif
   }
   /* USER CODE END 3 */
 }
@@ -394,21 +464,60 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 	if(huart->Instance == USART1)
 	{
-		if(rcvData[0] == 0xFF)
-		{
-			  for(uint32_t i = 0; i < 17; i ++)
-			  {
-					ws2812SetColor(i, 255, 255, 255);
-			  }
-		}
-		else
-		{
-			  for(uint32_t i = 0; i < 17; i ++)
-			  {
-					ws2812SetColor(i, 0, 0, 0);
-			  }
-		}
+#if(DEVICE == SHOOTER)
+			{
+				if(rcvData[0] != 0)
+				{
+					taskFlag = 1;
+				}
+			}
+#elif(DEVICE == SHOLDER)
+			{
+				if(rcvData[0] != 0)
+				{
+					taskFlag = 1;
+				}
+			}
+#else
+			{
+				if(rcvData[0] == 0xFF)
+				{
+					  for(uint32_t i = 0; i < 17; i ++)
+					  {
+							ws2812SetColor(i, 255, 255, 255);
+					  }
+				}
+				else
+				{
+					  for(uint32_t i = 0; i < 17; i ++)
+					  {
+							ws2812SetColor(i, 0, 0, 0);
+					  }
+				}
+			}
+#endif
+
+
 	}
+}
+
+void run_led_sequence(uint32_t count)
+{
+	if(count%2 == 1)
+	{
+		  for(uint32_t i = 0; i < 17; i ++)
+		  {
+				ws2812SetColor(i, 0, 0, 0);
+		  }
+	}
+	else
+	{
+		  for(uint32_t i = 0; i < 17; i ++)
+		  {
+				ws2812SetColor(i, 255, 255, 255);
+		  }
+	}
+
 }
 /* USER CODE END 4 */
 
