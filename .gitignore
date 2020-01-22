@@ -5,7 +5,9 @@
 */Debug/*
 */debug
 */debug/*
-*/.metadata/
+*/.metadata/*
+.metadata/*
+/.metadata/*
 
 
 # Compiled Object files
