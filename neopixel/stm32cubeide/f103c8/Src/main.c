@@ -36,8 +36,16 @@
 /* USER CODE BEGIN PD */
 #define SHOOTER 0
 #define SHOLDER 1
-#define DEVICE SHOLDER
+#define TEST_CASE1 2 //blinking
+#define TEST_CASE2 3 //smoothing
+#define TEST_CASE3 4 //circle
+#define TEST_CASE4 5 //turn on
+#define TEST_BLUETOOTH 4
+#define DEVICE TEST_CASE1
 
+#define BLINK 0
+#define SMOOTH 1
+#define CIRCLE 2
 #define SHOOTER_SERVO_MAX 1500
 #define SHOOTER_SERVO_MIN 1100
 
@@ -72,7 +80,7 @@ static void MX_TIM1_Init(void);
 static void MX_TIM2_Init(void);
 static void MX_USART1_UART_Init(void);
 /* USER CODE BEGIN PFP */
-void run_led_sequence(uint32_t count);
+void run_led_sequence(uint32_t count, uint8_t type);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -84,6 +92,7 @@ uint8_t sendData[10] = {0,};
 uint8_t step = 0;
 uint8_t taskFlag = 0;
 uint32_t taskCount = 0;
+uint8_t values = 0;
 /* USER CODE END 0 */
 
 /**
@@ -199,7 +208,48 @@ int main(void)
 		  }
 		  pastTick = nowTick;
 	  }
+#elif(DEVICE == TEST_CASE1)
 
+	  if(nowTick - pastTick > 50)
+	  {
+		  taskCount++;
+		  run_led_sequence(taskCount , BLINK);
+		  pastTick = nowTick;
+	  }
+
+#elif(DEVICE == TEST_CASE2)
+	  if(nowTick - pastTick > 50)
+	  {
+		  taskCount++;
+		  values ++;
+		  for(uint32_t i = 0 ; i < 28; i++)
+		  {
+			  ws2812SetColor(i, values, values, values);
+		  }
+		  if(values > 100)
+			  values = 0;
+
+		  pastTick = nowTick;
+	  }
+#elif(DEVICE == TEST_CASE3)
+	  if(nowTick - pastTick > 10)
+	  {
+		  taskCount++;
+		  run_led_sequence(taskCount, CIRCLE);
+		  if(taskCount == 23)
+		  {
+			  taskCount = 0;
+		  }
+		  pastTick = nowTick;
+	  }
+#elif(DEVICE == TEST_CASE4)
+	  if(nowTick - pastTick > 50)
+	  {
+		  for(uint32_t i  = 0; i < 28 ; i++)
+		  {
+			  ws2812SetColor(i, 255, 255, 255);
+		  }
+	  }
 #else
 	  if(nowTick - pastTick > 50)
 	  {
@@ -208,14 +258,14 @@ int main(void)
 		  {
 			    sendData[0] = 0xFF;
 			    HAL_UART_Transmit(&huart1, sendData, 1, 0xFFFF);
-//				ws2812SetColor(i, 255, 255, 255);
+				ws2812SetColor(i, 255, 255, 255);
 		  }
 		  if(step == 2)
 		  //for(uint32_t i = 0; i < 17; i ++)
 		  {
 			    sendData[0] = 0x00;
 			    HAL_UART_Transmit(&huart1, sendData, 1, 0xFFFF);
-//				ws2812SetColor(i, 0, 0, 0);
+				ws2812SetColor(i, 0, 0, 0);
 		  }
 
 			step++;
@@ -478,7 +528,19 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 					taskFlag = 1;
 				}
 			}
-#else
+#elif(DEVICE == TEST_CASE1)
+			{
+
+			}
+#elif(DEVICE == TEST_CASE2)
+			{
+
+			}
+#elif(DEVICE == TEST_CASE3)
+			{
+
+			}
+#elif(DEVICE == TEST_BLUETOOTH)
 			{
 				if(rcvData[0] == 0xFF)
 				{
@@ -501,21 +563,43 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 	}
 }
 
-void run_led_sequence(uint32_t count)
+void run_led_sequence(uint32_t count, uint8_t type)
 {
-	if(count%2 == 1)
+	if(type == BLINK)
 	{
-		  for(uint32_t i = 0; i < 17; i ++)
-		  {
-				ws2812SetColor(i, 0, 0, 0);
-		  }
+		if(count%2 == 0)
+		{
+			  for(uint32_t i = 0; i < 28; i ++)
+			  {
+					ws2812SetColor(i, 0, 0, 0);
+			  }
+		}
+		else
+		{
+			  for(uint32_t i = 0; i < 28; i ++)
+			  {
+					ws2812SetColor(i, (uint8_t)255, (uint8_t)255, (uint8_t)255);
+			  }
+		}
 	}
-	else
+
+	else if(type == SMOOTH)
 	{
-		  for(uint32_t i = 0; i < 17; i ++)
-		  {
+		uint8_t value = (uint8_t)count;
+		for(uint32_t i = 0; i < 28; i ++)
+		{
+			ws2812SetColor(i, value, value, value);
+		}
+	}
+	else if(type == CIRCLE)
+	{
+		for(uint32_t i = 0; i < 24; i ++)
+		{
+			if(i == count)
 				ws2812SetColor(i, 255, 255, 255);
-		  }
+			else
+				ws2812SetColor(i, 0, 0, 0);
+		}
 	}
 
 }
