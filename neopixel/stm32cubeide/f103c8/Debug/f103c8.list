@@ -6802,10 +6802,10 @@ int main(void)
  8002692:	4b2a      	ldr	r3, [pc, #168]	; (800273c <main+0x130>)
  8002694:	2200      	movs	r2, #0
  8002696:	601a      	str	r2, [r3, #0]
-			  htim2.Instance->CCR1 = 110;
+			  htim2.Instance->CCR1 = 113;
  8002698:	4b26      	ldr	r3, [pc, #152]	; (8002734 <main+0x128>)
  800269a:	681b      	ldr	r3, [r3, #0]
- 800269c:	226e      	movs	r2, #110	; 0x6e
+ 800269c:	2271      	movs	r2, #113	; 0x71
  800269e:	635a      	str	r2, [r3, #52]	; 0x34
  80026a0:	e040      	b.n	8002724 <main+0x118>
 		  }
@@ -6866,10 +6866,10 @@ int main(void)
  80026f8:	4b0f      	ldr	r3, [pc, #60]	; (8002738 <main+0x12c>)
  80026fa:	2200      	movs	r2, #0
  80026fc:	601a      	str	r2, [r3, #0]
-			  htim2.Instance->CCR1 = 110;
+			  htim2.Instance->CCR1 = 113;
  80026fe:	4b0d      	ldr	r3, [pc, #52]	; (8002734 <main+0x128>)
  8002700:	681b      	ldr	r3, [r3, #0]
- 8002702:	226e      	movs	r2, #110	; 0x6e
+ 8002702:	2271      	movs	r2, #113	; 0x71
  8002704:	635a      	str	r2, [r3, #52]	; 0x34
 
 			  for(uint32_t i  = 0; i < 28 ; i++)
