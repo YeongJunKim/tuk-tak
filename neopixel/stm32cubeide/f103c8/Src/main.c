@@ -40,8 +40,9 @@
 #define TEST_CASE2 3 //smoothing
 #define TEST_CASE3 4 //circle
 #define TEST_CASE4 5 //turn on
+#define TEST_SHOOTER 6
 #define TEST_BLUETOOTH 4
-#define DEVICE TEST_CASE4
+#define DEVICE TEST_SHOOTER
 
 #define BLINK 0
 #define SMOOTH 1
@@ -89,7 +90,7 @@ void run_led_sequence(uint32_t count, uint8_t type);
 uint8_t rcvData[10] = {0,};
 uint8_t sendData[10] = {0,};
 
-uint8_t step = 0;
+uint32_t step = 0;
 uint8_t taskFlag = 0;
 uint32_t taskCount = 0;
 uint8_t values = 0;
@@ -141,7 +142,7 @@ int main(void)
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2);
 
-  htim2.Instance->CCR1 = 150;
+  htim2.Instance->CCR1 = 110;
   htim2.Instance->CCR2 = 170;
   /* USER CODE END 2 */
 
@@ -249,6 +250,39 @@ int main(void)
 		  {
 			  ws2812SetColor(i, 120, 120, 120);
 		  }
+	  }
+#elif(DEVICE == TEST_SHOOTER)
+	  if(nowTick - pastTick > 50)
+	  {
+		  step++;
+		  if(step < 200)
+		  {
+			  taskCount=0;
+			  htim2.Instance->CCR1 = 110;
+		  }
+		  else if(step < 500)
+		  {
+			  taskCount=0;
+			  htim2.Instance->CCR1 = 166;
+		  }
+		  else if(step < 650)
+		  {
+			  taskCount++;
+			  htim2.Instance->CCR1 = 166;
+			  run_led_sequence(taskCount , BLINK);
+		  }
+		  else if(step > 700)
+		  {
+			  taskCount=0;
+			  step = 0;
+			  htim2.Instance->CCR1 = 110;
+
+			  for(uint32_t i  = 0; i < 28 ; i++)
+			  {
+				  ws2812SetColor(i, 0, 0, 0);
+			  }
+		  }
+		  pastTick = nowTick;
 	  }
 #else
 	  if(nowTick - pastTick > 50)
