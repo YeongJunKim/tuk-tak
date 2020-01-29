@@ -34,15 +34,16 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define SHOOTER 0
-#define SHOLDER 1
-#define TEST_CASE1 2 //blinking
-#define TEST_CASE2 3 //smoothing
-#define TEST_CASE3 4 //circle
-#define TEST_CASE4 5 //turn on
-#define TEST_SHOOTER 6
-#define TEST_BLUETOOTH 4
-#define DEVICE TEST_SHOOTER
+#define SHOOTER 			0
+#define SHOLDER 			1
+#define CHEST 				2
+#define TEST_CASE1 			3 //blinking
+#define TEST_CASE2 			4 //smoothing
+#define TEST_CASE3 			5 //circle
+#define TEST_CASE4 			6 //turn on
+#define TEST_SHOOTER 		7
+#define TEST_BLUETOOTH 		8
+#define DEVICE SHOOTER
 
 #define BLINK 0
 #define SMOOTH 1
@@ -156,22 +157,42 @@ int main(void)
 	  nowTick = HAL_GetTick();
 	  HAL_UART_Receive_IT(&huart1, rcvData, 1);
 #if(DEVICE == SHOOTER)
-	  if(nowTick - pastTick > 50)	//0.1sec
+	  if(taskFlag == 1)
 	  {
-		  if(taskFlag == 1)
-		  {
-			  taskCount++;
-			  //set servo motor
-			  htim2.Instance->CCR1 = SHOOTER_SERVO_MAX;
-			  //set led
-			  run_led_sequence(taskCount);
-		  }
-		  else
-		  {
-			  //reset all variables
-			  htim2.Instance->CCR1 = SHOOTER_SERVO_MIN;
-			  taskCount = 0;
-			  run_led_sequence(taskCount);
+	  if(nowTick - pastTick > 50)
+	  {
+			  step++;
+			  if(step < 200)	//10sec
+			  {
+				  taskCount=0;
+				  htim2.Instance->CCR1 = 113;
+			  }
+			  else if(step < 500)	//25sec
+			  {
+				  taskCount=0;
+				  htim2.Instance->CCR1 = 166;
+			  }
+			  else if(step < 650)	//32.5sec
+			  {
+				  taskCount++;
+				  htim2.Instance->CCR1 = 166;
+				  run_led_sequence(taskCount , BLINK);
+			  }
+			  else if(step < 800)	//40sec
+			  {
+				  taskCount=0;
+				  step = 0;
+				  htim2.Instance->CCR1 = 113;
+
+				  for(uint32_t i  = 0; i < 28 ; i++)
+				  {
+					  ws2812SetColor(i, 0, 0, 0);
+				  }
+			  }
+			  else if(step < 850)	//42.5sec
+			  {
+				  taskFlag = 0;
+			  }
 		  }
 		  pastTick = nowTick;
 	  }
@@ -208,6 +229,34 @@ int main(void)
 			  run_led_sequence(taskCount);
 		  }
 		  pastTick = nowTick;
+	  }
+#elif(DEVICE == CHEST)
+	  {
+		  if(nowTick - pastTick > 20)
+		  {
+			  if(step == 0)
+			  {
+				  taskCount++;
+				  run_led_sequence(taskCount, SMOOTH);
+				  if(taskCount == 100)
+					  step = 1;
+			  }
+			  else if(step == 1)
+			  {
+				  taskCount--;
+				  run_led_sequence(taskCount, SMOOTH);
+				  if(taskCount == 0)
+					  step = 2;
+			  }
+			  else if(step == 2)
+			  {
+				  step = 0;
+				  taskCount = 0;
+				  run_led_sequence(taskCount, SMOOTH);
+			  }
+
+			  pastTick = nowTick;
+		  }
 	  }
 #elif(DEVICE == TEST_CASE1)
 
@@ -550,12 +599,19 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 	{
 #if(DEVICE == SHOOTER)
 			{
+				if(rcvData[0] == 0b00000001)
+				{
+					taskFlag = 0b00000001;
+				}
+			}
+#elif(DEVICE == SHOLDER)
+			{
 				if(rcvData[0] != 0)
 				{
 					taskFlag = 1;
 				}
 			}
-#elif(DEVICE == SHOLDER)
+#elif(DEVICE == CHEST)
 			{
 				if(rcvData[0] != 0)
 				{
