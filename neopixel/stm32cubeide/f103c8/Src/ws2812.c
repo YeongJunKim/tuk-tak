@@ -55,6 +55,14 @@ void ws2812Begin(uint32_t led_cnt)
 	  led_buf[i] = 0;
   }
 }
+void ws2812ClearColor(void)
+{
+	for(uint32_t i = 0; i < 25; i++)
+	{
+		ws2812SetColor(i, 0, 0, 0);
+	}
+
+}
 
 void ws2812SetColor(uint32_t index, uint8_t red, uint8_t green, uint8_t blue)
 {

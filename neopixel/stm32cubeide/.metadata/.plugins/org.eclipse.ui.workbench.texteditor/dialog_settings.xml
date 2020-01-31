@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="TEST_CASE2"/>
+		<item key="selection" value="SHOULDER"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="shoulder"/>
+			<item value="sholder"/>
+			<item value="taskCount"/>
+			<item value="taskFlag1"/>
+			<item value="taskFlag"/>
 			<item value="TEST_CASE2"/>
 			<item value=""/>
 		</list>
 		<list key="replacehistory">
+			<item value="SHOULDER"/>
+			<item value="shoulder"/>
+			<item value="taskCount1"/>
+			<item value="taskFlag1"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

@@ -1,3 +1,4 @@
 ws2812.c:39:6:ws2812Init	8	static
 ws2812.c:49:6:ws2812Begin	24	static
-ws2812.c:59:6:ws2812SetColor	128	static
+ws2812.c:58:6:ws2812ClearColor	16	static
+ws2812.c:67:6:ws2812SetColor	128	static

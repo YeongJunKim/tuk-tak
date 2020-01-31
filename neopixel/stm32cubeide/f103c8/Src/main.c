@@ -35,7 +35,7 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 #define SHOOTER 			0
-#define SHOLDER 			1
+#define SHOULDER 			1
 #define CHEST 				2
 #define TEST_CASE1 			3 //blinking
 #define TEST_CASE2 			4 //smoothing
@@ -43,7 +43,7 @@
 #define TEST_CASE4 			6 //turn on
 #define TEST_SHOOTER 		7
 #define TEST_BLUETOOTH 		8
-#define DEVICE SHOOTER
+#define DEVICE SHOULDER
 
 #define BLINK 0
 #define SMOOTH 1
@@ -51,8 +51,8 @@
 #define SHOOTER_SERVO_MAX 1500
 #define SHOOTER_SERVO_MIN 1100
 
-#define SHOLDER_SERVO_MAX 1900
-#define SHOLDER_SERVO_MIN 1100
+#define SHOULDER_SERVO_MAX 1900
+#define SHOULDER_SERVO_MIN 1100
 
 #define HEAD_SERVO_MAX 1900
 #define HEAD_SERVO_MIN 1100
@@ -92,8 +92,10 @@ uint8_t rcvData[10] = {0,};
 uint8_t sendData[10] = {0,};
 
 uint32_t step = 0;
-uint8_t taskFlag = 0;
-uint32_t taskCount = 0;
+uint8_t taskFlag1 = 0;
+uint8_t taskFlag2 = 0;
+uint32_t taskCount1 = 0;
+uint32_t taskCount2 = 0;
 uint8_t values = 0;
 /* USER CODE END 0 */
 
@@ -145,6 +147,14 @@ int main(void)
 
   htim2.Instance->CCR1 = 110;
   htim2.Instance->CCR2 = 170;
+
+
+#if(DEVICE == SHOULDER)	//have to init sequence
+  htim1.Instance->CCR2 = 110;
+  HAL_Delay(5000);
+  htim1.Instance->CCR3 = 110;
+  HAL_Delay(5000);
+#endif
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -157,30 +167,31 @@ int main(void)
 	  nowTick = HAL_GetTick();
 	  HAL_UART_Receive_IT(&huart1, rcvData, 1);
 #if(DEVICE == SHOOTER)
-	  if(taskFlag == 1)
+	  if(taskFlag1 == 0x02)
 	  {
-	  if(nowTick - pastTick > 50)
-	  {
+		  if(nowTick - pastTick > 50)
+		  {
+			  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_12);
 			  step++;
-			  if(step < 200)	//10sec
+			  if(step < 5)	//10sec
 			  {
-				  taskCount=0;
+				  taskCount1=0;
 				  htim2.Instance->CCR1 = 113;
 			  }
-			  else if(step < 500)	//25sec
+			  else if(step < 250)	//25sec - 12.5sec
 			  {
-				  taskCount=0;
+				  taskCount1=0;
 				  htim2.Instance->CCR1 = 166;
 			  }
-			  else if(step < 650)	//32.5sec
+			  else if(step < 400)	//32.5sec - 12.5sec
 			  {
-				  taskCount++;
+				  taskCount1++;
 				  htim2.Instance->CCR1 = 166;
-				  run_led_sequence(taskCount , BLINK);
+				  run_led_sequence(taskCount1 , BLINK);
 			  }
-			  else if(step < 800)	//40sec
+			  else if(step < 550)	//40sec - 12.5sec
 			  {
-				  taskCount=0;
+				  taskCount1=0;
 				  step = 0;
 				  htim2.Instance->CCR1 = 113;
 
@@ -189,44 +200,102 @@ int main(void)
 					  ws2812SetColor(i, 0, 0, 0);
 				  }
 			  }
-			  else if(step < 850)	//42.5sec
+			  else if(step < 600)	//42.5sec - 12.5sec
 			  {
-				  taskFlag = 0;
+				  taskFlag1 = 0;
 			  }
+			  pastTick = nowTick;
 		  }
-		  pastTick = nowTick;
 	  }
-#elif(DEVICE == SHOLDER)
-	  if(nowTick - pastTick > 50)	//0.1sec
+	  else
 	  {
-		  if(taskFlag == 1)
+		  if(nowTick - pastTick > 50)
 		  {
-			  taskCount++;
-			  //set servo motor
-			  if(((rcvData[0] >> 7) & 0x01) == 0x01)
+
+			  for(uint32_t i  = 0; i < 28 ; i++)
 			  {
-				  htim2.Instance->CCR1 = SHOLDER_SERVO_MAX;
-				  //set led
-				  run_led_sequence(taskCount);
+				  ws2812SetColor(i, 0, 0, 0);
 			  }
-			  if(((rcvData[0]) & 0x01) == 0x01)
+			  pastTick = nowTick;
+		  }
+	  }
+#elif(DEVICE == SHOULDER)
+	  if(nowTick - pastTick > 50)
+	  {
+		  if(taskFlag1 || taskFlag2)
+		  {
+			  if(taskFlag1)				//head
 			  {
-				  htim2.Instance->CCR2 = HEAD_SERVO_MAX;
+				  taskCount1++;
+				  if(taskCount1 < 300)
+				  {
+					  // open linear servo head
+					  htim1.Instance->CCR1 = 160;
+				  }
+				  else if(taskCount1 < 600)
+				  {
+					  // close linear servo head
+					  htim1.Instance->CCR1 = 110;
+				  }
+				  else if(taskCount1 < 700)
+				  {
+					  // init head
+					  htim1.Instance->CCR1 = 110;
+					  taskCount1 = 0;
+					  taskFlag1 = 0;
+				  }
+			  }
+
+			  if(taskFlag2)				//shoulder
+			  {
+				  taskCount2++;
+
+				  if(taskCount2 < 150)
+				  {
+					  //open angular servo shoulder
+					  ws2812ClearColor();
+					  htim1.Instance->CCR2 = 110;
+					  htim1.Instance->CCR3 = 110;
+				  }
+				  else if(taskCount2 < 600)
+				  {
+					  //open linear servo shooter
+					  htim1.Instance->CCR2 = 110;
+					  htim1.Instance->CCR3 = 110;
+					  ws2812ClearColor();
+				  }
+				  else if(taskCount2 < 800)
+				  {
+					  //shooting
+					  htim1.Instance->CCR2 = 110;
+					  htim1.Instance->CCR3 = 110;
+					  run_led_sequence(taskCount2, BLINK);
+				  }
+				  else if(taskCount2 < 1000)
+				  {
+					  //close linear servo shooter
+					  htim1.Instance->CCR2 = 110;
+					  htim1.Instance->CCR3 = 110;
+					  ws2812ClearColor();
+				  }
+				  else if(taskCount2 < 1200)
+				  {
+					  //close angular servo shoulder
+					  htim1.Instance->CCR2 = 110;
+					  htim1.Instance->CCR3 = 110;
+					  ws2812ClearColor();
+					  //init head
+					  taskCount2 = 0;
+					  taskFlag2 = 0;
+				  }
 			  }
 		  }
 		  else
 		  {
-			  //reset all variables
-			  if(((rcvData[0] >> 7) & 0x01) != 0x01)
-			  {
-				  htim2.Instance->CCR1 = SHOLDER_SERVO_MIN;
-			  }
-			  if(((rcvData[0]) & 0x01) != 0x01)
-			  {
-				  htim2.Instance->CCR2 = HEAD_SERVO_MIN;
-			  }
-			  taskCount = 0;
-			  run_led_sequence(taskCount);
+			  // head init
+			  // TODO do they move sequence?
+			  // SHOULDER init
+			  // TODO do they move sequence?
 		  }
 		  pastTick = nowTick;
 	  }
@@ -236,23 +305,23 @@ int main(void)
 		  {
 			  if(step == 0)
 			  {
-				  taskCount++;
-				  run_led_sequence(taskCount, SMOOTH);
-				  if(taskCount == 100)
+				  taskCount1++;
+				  run_led_sequence(taskCount1, SMOOTH);
+				  if(taskCount1 == 100)
 					  step = 1;
 			  }
 			  else if(step == 1)
 			  {
-				  taskCount--;
-				  run_led_sequence(taskCount, SMOOTH);
-				  if(taskCount == 0)
+				  taskCount1--;
+				  run_led_sequence(taskCount1, SMOOTH);
+				  if(taskCount1 == 0)
 					  step = 2;
 			  }
 			  else if(step == 2)
 			  {
 				  step = 0;
-				  taskCount = 0;
-				  run_led_sequence(taskCount, SMOOTH);
+				  taskCount1 = 0;
+				  run_led_sequence(taskCount1, SMOOTH);
 			  }
 
 			  pastTick = nowTick;
@@ -262,15 +331,15 @@ int main(void)
 
 	  if(nowTick - pastTick > 50)
 	  {
-		  taskCount++;
-		  run_led_sequence(taskCount , BLINK);
+		  taskCount1++;
+		  run_led_sequence(taskCount1 , BLINK);
 		  pastTick = nowTick;
 	  }
 
 #elif(DEVICE == TEST_CASE2)
 	  if(nowTick - pastTick > 50)
 	  {
-		  taskCount++;
+		  taskCount1++;
 		  values ++;
 		  for(uint32_t i = 0 ; i < 28; i++)
 		  {
@@ -284,11 +353,11 @@ int main(void)
 #elif(DEVICE == TEST_CASE3)
 	  if(nowTick - pastTick > 10)
 	  {
-		  taskCount++;
-		  run_led_sequence(taskCount, CIRCLE);
-		  if(taskCount == 23)
+		  taskCount1++;
+		  run_led_sequence(taskCount1, CIRCLE);
+		  if(taskCount1 == 23)
 		  {
-			  taskCount = 0;
+			  taskCount1 = 0;
 		  }
 		  pastTick = nowTick;
 	  }
@@ -306,23 +375,23 @@ int main(void)
 		  step++;
 		  if(step < 200)
 		  {
-			  taskCount=0;
+			  taskCount1=0;
 			  htim2.Instance->CCR1 = 113;
 		  }
 		  else if(step < 500)
 		  {
-			  taskCount=0;
+			  taskCount1=0;
 			  htim2.Instance->CCR1 = 166;
 		  }
 		  else if(step < 650)
 		  {
-			  taskCount++;
+			  taskCount1++;
 			  htim2.Instance->CCR1 = 166;
-			  run_led_sequence(taskCount , BLINK);
+			  run_led_sequence(taskCount1 , BLINK);
 		  }
 		  else if(step > 700)
 		  {
-			  taskCount=0;
+			  taskCount1=0;
 			  step = 0;
 			  htim2.Instance->CCR1 = 113;
 
@@ -341,18 +410,40 @@ int main(void)
 		  {
 			    sendData[0] = 0xFF;
 			    HAL_UART_Transmit(&huart1, sendData, 1, 0xFFFF);
-				ws2812SetColor(i, 255, 255, 255);
+				//ws2812SetColor(i, 255, 255, 255);
 		  }
 		  if(step == 2)
 		  //for(uint32_t i = 0; i < 17; i ++)
 		  {
 			    sendData[0] = 0x00;
 			    HAL_UART_Transmit(&huart1, sendData, 1, 0xFFFF);
-				ws2812SetColor(i, 0, 0, 0);
+				//ws2812SetColor(i, 0, 0, 0);
+		  }
+		  if(step == 3)
+		  {
+			    sendData[0] = 0x01;
+			    HAL_UART_Transmit(&huart1, sendData, 1, 0xFFFF);
+				//ws2812SetColor(i, 255, 255, 255);
+		  }
+		  if(step == 3)
+		  {
+			    sendData[0] = 0x02;
+			    HAL_UART_Transmit(&huart1, sendData, 1, 0xFFFF);
+				//ws2812SetColor(i, 255, 255, 255);
+		  }
+		  if(step == 4)
+		  {
+			    sendData[0] = 0x80;
+			    HAL_UART_Transmit(&huart1, sendData, 1, 0xFFFF);
+		  }
+		  if(step == 5)
+		  {
+			    sendData[0] = 0x82;
+			    HAL_UART_Transmit(&huart1, sendData, 1, 0xFFFF);
 		  }
 
 			step++;
-			if(step == 3)
+			if(step == 6)
 				step = 1;
 		  pastTick = nowTick;
 	  }
@@ -510,6 +601,10 @@ static void MX_TIM2_Init(void)
   {
     Error_Handler();
   }
+  if (HAL_TIM_PWM_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_3) != HAL_OK)
+  {
+    Error_Handler();
+  }
   /* USER CODE BEGIN TIM2_Init 2 */
 
   /* USER CODE END TIM2_Init 2 */
@@ -599,23 +694,27 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 	{
 #if(DEVICE == SHOOTER)
 			{
-				if(rcvData[0] == 0b00000001)
+				if(rcvData[0] == 0b00000010)
 				{
-					taskFlag = 0b00000001;
+					taskFlag1 = 0b00000010;
 				}
 			}
-#elif(DEVICE == SHOLDER)
+#elif(DEVICE == SHOULDER)
 			{
-				if(rcvData[0] != 0)
+				if(rcvData[0] & 0b10000000)
 				{
-					taskFlag = 1;
+					taskFlag2 = 1;
+				}
+				else if(rcvData[0] & 0b00000010)
+				{
+					taskFlag1 = 1;
 				}
 			}
 #elif(DEVICE == CHEST)
 			{
 				if(rcvData[0] != 0)
 				{
-					taskFlag = 1;
+					taskFlag1 = 1;
 				}
 			}
 #elif(DEVICE == TEST_CASE1)
