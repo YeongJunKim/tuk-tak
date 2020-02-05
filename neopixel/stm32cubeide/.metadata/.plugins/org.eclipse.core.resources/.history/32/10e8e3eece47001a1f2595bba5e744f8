@@ -44,12 +44,11 @@
 #define TEST_SHOOTER 		7
 #define TEST_BLUETOOTH 		8
 #define TEST_SERVO			9
+#define DEVICE TEST_SERVO
 
-#define DEVICE CHEST
 #define BLINK 0
 #define SMOOTH 1
 #define CIRCLE 2
-#define BLUE_SMOOTH 3
 #define SHOOTER_SERVO_MAX 1500
 #define SHOOTER_SERVO_MIN 1100
 
@@ -339,16 +338,14 @@ int main(void)
 			  if(step == 0)
 			  {
 				  taskCount1++;
-				  //run_led_sequence(taskCount1, SMOOTH);
-				  run_led_sequence(taskCount1, BLUE_SMOOTH);
+				  run_led_sequence(taskCount1, SMOOTH);
 				  if(taskCount1 == 100)
 					  step = 1;
 			  }
 			  else if(step == 1)
 			  {
 				  taskCount1--;
-				  //run_led_sequence(taskCount1, SMOOTH);
-				  run_led_sequence(taskCount1, BLUE_SMOOTH);
+				  run_led_sequence(taskCount1, SMOOTH);
 				  if(taskCount1 == 0)
 					  step = 2;
 			  }
@@ -356,8 +353,7 @@ int main(void)
 			  {
 				  step = 0;
 				  taskCount1 = 0;
-				  //run_led_sequence(taskCount1, SMOOTH);
-				  run_led_sequence(taskCount1, BLUE_SMOOTH);
+				  run_led_sequence(taskCount1, SMOOTH);
 			  }
 
 			  pastTick = nowTick;
@@ -446,21 +442,22 @@ int main(void)
 
 		  step++;
 
-		  if(step < 200)
+		  if(step < 100)
 		  {
-			  htim2.Instance->CCR1 = 110;
+
 		  }
-		  else if(step < 400)
+		  else if(step < 200)
 		  {
-			  htim2.Instance->CCR1 = 190;
-		  }
-		  else if(step < 500)
-		  {
-			  step = 0;
+
 		  }
 
-		  pastTick = nowTick;
+
+
 	  }
+
+
+
+
 #else
 	  if(nowTick - pastTick > 50)
 	  {
@@ -841,14 +838,6 @@ void run_led_sequence(uint32_t count, uint8_t type)
 		for(uint32_t i = 0; i < 28; i ++)
 		{
 			ws2812SetColor(i, value, value, value);
-		}
-	}
-	else if(type == BLUE_SMOOTH)
-	{
-		uint8_t value = (uint8_t)count;
-		for(uint32_t i = 0; i < 28; i ++)
-		{
-			ws2812SetColor(i, (value >> 2), (value >> 2), value);
 		}
 	}
 	else if(type == CIRCLE)

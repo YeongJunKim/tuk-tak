@@ -848,7 +848,7 @@ void run_led_sequence(uint32_t count, uint8_t type)
 		uint8_t value = (uint8_t)count;
 		for(uint32_t i = 0; i < 28; i ++)
 		{
-			ws2812SetColor(i, (value >> 2), (value >> 2), value);
+			ws2812SetColor(i, 0, value >> 2, value);
 		}
 	}
 	else if(type == CIRCLE)

@@ -339,7 +339,7 @@ int main(void)
 			  if(step == 0)
 			  {
 				  taskCount1++;
-				  //run_led_sequence(taskCount1, SMOOTH);
+				  run_led_sequence(taskCount1, SMOOTH);
 				  run_led_sequence(taskCount1, BLUE_SMOOTH);
 				  if(taskCount1 == 100)
 					  step = 1;
@@ -347,8 +347,7 @@ int main(void)
 			  else if(step == 1)
 			  {
 				  taskCount1--;
-				  //run_led_sequence(taskCount1, SMOOTH);
-				  run_led_sequence(taskCount1, BLUE_SMOOTH);
+				  run_led_sequence(taskCount1, SMOOTH);
 				  if(taskCount1 == 0)
 					  step = 2;
 			  }
@@ -356,8 +355,7 @@ int main(void)
 			  {
 				  step = 0;
 				  taskCount1 = 0;
-				  //run_led_sequence(taskCount1, SMOOTH);
-				  run_led_sequence(taskCount1, BLUE_SMOOTH);
+				  run_led_sequence(taskCount1, SMOOTH);
 			  }
 
 			  pastTick = nowTick;
@@ -848,7 +846,7 @@ void run_led_sequence(uint32_t count, uint8_t type)
 		uint8_t value = (uint8_t)count;
 		for(uint32_t i = 0; i < 28; i ++)
 		{
-			ws2812SetColor(i, (value >> 2), (value >> 2), value);
+			ws2812SetColor(i, 0, 0, value);
 		}
 	}
 	else if(type == CIRCLE)
