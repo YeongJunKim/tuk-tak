@@ -17,4 +17,6 @@ typedef int BOOL;
 BOOL ws2812Init(void);
 void ws2812Begin(uint32_t led_cnt);
 void ws2812ClearColor(void);
+void ws2812ClearColor2(void);
 void ws2812SetColor(uint32_t index, uint8_t red, uint8_t green, uint8_t blue);
+void ws2812SetColor2(uint32_t index, uint8_t red, uint8_t green, uint8_t blue);

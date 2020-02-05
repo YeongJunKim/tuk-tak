@@ -44,8 +44,9 @@
 #define TEST_SHOOTER 		7
 #define TEST_BLUETOOTH 		8
 #define TEST_SERVO			9
+#define TEST_SHOLDER 		10
 
-#define DEVICE CHEST
+#define DEVICE TEST_SHOLDER
 #define BLINK 0
 #define SMOOTH 1
 #define CIRCLE 2
@@ -69,6 +70,7 @@
 TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim2;
 DMA_HandleTypeDef hdma_tim1_ch1;
+DMA_HandleTypeDef hdma_tim1_ch2;
 
 UART_HandleTypeDef huart1;
 
@@ -85,6 +87,7 @@ static void MX_TIM2_Init(void);
 static void MX_USART1_UART_Init(void);
 /* USER CODE BEGIN PFP */
 void run_led_sequence(uint32_t count, uint8_t type);
+void run_led_sequence2(uint32_t count, uint8_t type);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -336,6 +339,7 @@ int main(void)
 	  {
 		  if(nowTick - pastTick > 20)
 		  {
+			  taskCount2++;
 			  if(step == 0)
 			  {
 				  taskCount1++;
@@ -359,6 +363,7 @@ int main(void)
 				  //run_led_sequence(taskCount1, SMOOTH);
 				  run_led_sequence(taskCount1, BLUE_SMOOTH);
 			  }
+
 
 			  pastTick = nowTick;
 		  }
@@ -439,6 +444,33 @@ int main(void)
 		  }
 		  pastTick = nowTick;
 	  }
+#elif(DEVICE == TEST_SHOLDER)
+	  if(nowTick - pastTick > 50)
+	  {
+		  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_12);
+
+		  step++;
+
+		  if(step < 100)
+		  {
+			  htim2.Instance->CCR4 = 110;
+		  }
+		  else if(step < 200)
+		  {
+			  htim2.Instance->CCR4 = 165;
+		  }
+		  else if(step < 300)
+		  {
+			  htim2.Instance->CCR4 = 110;
+		  }
+		  else if(step < 400)
+		  {
+			  step = 0;
+		  }
+
+		  pastTick = nowTick;
+	  }
+
 #elif(DEVICE == TEST_SERVO)
 	  if(nowTick - pastTick > 50)
 	  {
@@ -596,6 +628,10 @@ static void MX_TIM1_Init(void)
   {
     Error_Handler();
   }
+  if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
+  {
+    Error_Handler();
+  }
   sBreakDeadTimeConfig.OffStateRunMode = TIM_OSSR_DISABLE;
   sBreakDeadTimeConfig.OffStateIDLEMode = TIM_OSSI_DISABLE;
   sBreakDeadTimeConfig.LockLevel = TIM_LOCKLEVEL_OFF;
@@ -720,6 +756,9 @@ static void MX_DMA_Init(void)
   /* DMA1_Channel2_IRQn interrupt configuration */
   HAL_NVIC_SetPriority(DMA1_Channel2_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(DMA1_Channel2_IRQn);
+  /* DMA1_Channel3_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Channel3_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel3_IRQn);
 
 }
 
@@ -821,14 +860,14 @@ void run_led_sequence(uint32_t count, uint8_t type)
 	{
 		if(count%2 == 0)
 		{
-			  for(uint32_t i = 0; i < 28; i ++)
+			  for(uint32_t i = 0; i < 40; i ++)
 			  {
 					ws2812SetColor(i, 0, 0, 0);
 			  }
 		}
 		else
 		{
-			  for(uint32_t i = 0; i < 28; i ++)
+			  for(uint32_t i = 0; i < 40; i ++)
 			  {
 					ws2812SetColor(i, (uint8_t)255, (uint8_t)255, (uint8_t)255);
 			  }
@@ -846,7 +885,7 @@ void run_led_sequence(uint32_t count, uint8_t type)
 	else if(type == BLUE_SMOOTH)
 	{
 		uint8_t value = (uint8_t)count;
-		for(uint32_t i = 0; i < 28; i ++)
+		for(uint32_t i = 0; i < 40; i ++)
 		{
 			ws2812SetColor(i, (value >> 2), (value >> 2), value);
 		}
@@ -859,6 +898,55 @@ void run_led_sequence(uint32_t count, uint8_t type)
 				ws2812SetColor(i, 255, 255, 255);
 			else
 				ws2812SetColor(i, 0, 0, 0);
+		}
+	}
+
+}
+
+void run_led_sequence2(uint32_t count, uint8_t type)
+{
+	if(type == BLINK)
+	{
+		if(count%2 == 0)
+		{
+			  for(uint32_t i = 0; i < 28; i ++)
+			  {
+					ws2812SetColor2(i, 0, 0, 0);
+			  }
+		}
+		else
+		{
+			  for(uint32_t i = 0; i < 28; i ++)
+			  {
+					ws2812SetColor2(i, (uint8_t)255, (uint8_t)255, (uint8_t)255);
+			  }
+		}
+	}
+
+	else if(type == SMOOTH)
+	{
+		uint8_t value = (uint8_t)count;
+		for(uint32_t i = 0; i < 28; i ++)
+		{
+			ws2812SetColor2(i, value, value, value);
+		}
+	}
+	else if(type == BLUE_SMOOTH)
+	{
+		uint8_t value = (uint8_t)count;
+		for(uint32_t i = 0; i < 28; i ++)
+		{
+			ws2812SetColor2(i, (value >> 2), (value >> 2), value);
+		}
+	}
+	else if(type == CIRCLE)
+	{
+		for(uint32_t i = 0; i < 24; i ++)
+		{
+			if(i == count)
+				ws2812SetColor2(i, 255, 255, 255);
+			else
+				ws2812SetColor2(i, 0, 0, 0);
 		}
 	}
 
