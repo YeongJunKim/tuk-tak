@@ -43,7 +43,7 @@
 #define TEST_CASE4 			6 //turn on
 #define TEST_SHOOTER 		7
 #define TEST_BLUETOOTH 		8
-#define DEVICE SHOULDER
+#define DEVICE SHOOTER
 
 #define BLINK 0
 #define SMOOTH 1
@@ -147,11 +147,15 @@ int main(void)
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_3);
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_4);
 
-  htim2.Instance->CCR1 = 110;
-  htim2.Instance->CCR2 = 170;
-
+#if(DEVICE == SHOOTER)
+  htim2.Instance->CCR1 = 113;
+  htim2.Instance->CCR2 = 0;
+  htim2.Instance->CCR3 = 0;
+  htim2.Instance->CCR4 = 0;
+#endif
 
 #if(DEVICE == SHOULDER)	//have to init sequence
+  htim2.Instance->CCR1 = 110;
   htim2.Instance->CCR4 = 110;
   HAL_Delay(5000);
   htim2.Instance->CCR2 = 110;
@@ -399,6 +403,7 @@ int main(void)
 #elif(DEVICE == TEST_SHOOTER)
 	  if(nowTick - pastTick > 50)
 	  {
+		  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_12);
 		  step++;
 		  if(step < 200)
 		  {
