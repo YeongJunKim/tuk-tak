@@ -46,7 +46,7 @@
 #define TEST_SERVO			9
 #define TEST_SHOLDER 		10
 
-#define DEVICE SHOULDER
+#define DEVICE TEST_SHOLDER
 #define BLINK 0
 #define SMOOTH 1
 #define CIRCLE 2

@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Users/dud37/Desktop/workspace/tuk-tak/neopixel/stm32cubeide/f103c8/Inc
+HeaderPath=C:/Users/kwansoo/Desktop/workspace/tuk-tak/neopixel/stm32cubeide/f103c8/Inc
 HeaderFiles=stm32f1xx_it.h;stm32f1xx_hal_conf.h;main.h;
-SourcePath=C:/Users/dud37/Desktop/workspace/tuk-tak/neopixel/stm32cubeide/f103c8/Src
+SourcePath=C:/Users/kwansoo/Desktop/workspace/tuk-tak/neopixel/stm32cubeide/f103c8/Src
 SourceFiles=stm32f1xx_it.c;stm32f1xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]
