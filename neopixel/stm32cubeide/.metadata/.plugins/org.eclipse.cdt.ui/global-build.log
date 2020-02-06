@@ -10613,3 +10613,758 @@ arm-none-eabi-size   f103c8.elf
   13296	     20	   8412	  21728	   54e0	f103c8.elf
 Finished building: default.size.stdout
  
+20:38:42 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12140	     20	   8404	  20564	   5054	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+ 
+ 
+Finished building: f103c8.list
+ 
+20:39:28 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12140	     20	   8404	  20564	   5054	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+ 
+ 
+Finished building: f103c8.list
+ 
+20:40:46 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12104	     20	   8412	  20536	   5038	f103c8.elf
+Finished building: default.size.stdout
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+ 
+ 
+Finished building: f103c8.list
+ 
+ 
+20:41:21 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12192	     20	   8412	  20624	   5090	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+Finished building: f103c8.list
+ 
+ 
+ 
+20:42:49 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12192	     20	   8412	  20624	   5090	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+ 
+ 
+Finished building: f103c8.list
+ 
+20:46:14 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12056	     20	   8404	  20480	   5000	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.bin
+Finished building: f103c8.hex
+Finished building: f103c8.list
+ 
+ 
+ 
+20:49:50 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12072	     20	   8404	  20496	   5010	f103c8.elf
+Finished building: default.size.stdout
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+Finished building: f103c8.list
+ 
+ 
+ 
+ 
+20:50:18 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12072	     20	   8404	  20496	   5010	f103c8.elf
+Finished building: default.size.stdout
+ 
+20:50:30 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12072	     20	   8404	  20496	   5010	f103c8.elf
+Finished building: default.size.stdout
+ 
+20:58:30 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c8tx.o" "../Startup/startup_stm32f103c8tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/stm32f1xx_hal_msp.d" -MT"Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/stm32f1xx_it.d" -MT"Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/system_stm32f1xx.d" -MT"Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/system_stm32f1xx.o"
+arm-none-eabi-gcc "../Src/ws2812.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/ws2812.d" -MT"Src/ws2812.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/ws2812.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.d" -MT"Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/system_stm32f1xx.o:C:/Users/kwansoo/Desktop/workspace/tuk-tak/neopixel/stm32cubeide/f103c8/Debug/../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h:69: multiple definition of `SystemCoreClock'
+Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o:C:/Users/kwansoo/Desktop/workspace/tuk-tak/neopixel/stm32cubeide/f103c8/Debug/../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h:69: first defined here
+Src/system_stm32f1xx.o:(.rodata.AHBPrescTable+0x0): multiple definition of `AHBPrescTable'
+Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o:(.rodata.AHBPrescTable+0x0): first defined here
+Src/system_stm32f1xx.o:(.rodata.APBPrescTable+0x0): multiple definition of `APBPrescTable'
+Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o:(.rodata.APBPrescTable+0x0): first defined here
+Src/system_stm32f1xx.o: In function `SystemInit':
+C:/Users/kwansoo/Desktop/workspace/tuk-tak/neopixel/stm32cubeide/f103c8/Debug/../Src/system_stm32f1xx.c:176: multiple definition of `SystemInit'
+Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o:C:/Users/kwansoo/Desktop/workspace/tuk-tak/neopixel/stm32cubeide/f103c8/Debug/../Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.c:176: first defined here
+Src/system_stm32f1xx.o: In function `SystemCoreClockUpdate':
+C:/Users/kwansoo/Desktop/workspace/tuk-tak/neopixel/stm32cubeide/f103c8/Debug/../Src/system_stm32f1xx.c:266: multiple definition of `SystemCoreClockUpdate'
+Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o:C:/Users/kwansoo/Desktop/workspace/tuk-tak/neopixel/stm32cubeide/f103c8/Debug/../Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.c:266: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:48: f103c8.elf] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+20:59:22 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c8tx.o" "../Startup/startup_stm32f103c8tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/stm32f1xx_hal_msp.d" -MT"Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/stm32f1xx_it.d" -MT"Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/system_stm32f1xx.d" -MT"Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/system_stm32f1xx.o"
+arm-none-eabi-gcc "../Src/ws2812.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/ws2812.d" -MT"Src/ws2812.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/ws2812.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12072	     20	   8404	  20496	   5010	f103c8.elf
+Finished building: default.size.stdout
+Finished building: f103c8.hex
+ 
+Finished building: f103c8.bin
+ 
+ 
+Finished building: f103c8.list
+ 
+21:02:59 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12072	     20	   8404	  20496	   5010	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+Finished building: f103c8.list
+ 
+ 
+ 
+21:09:49 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12072	     20	   8404	  20496	   5010	f103c8.elf
+Finished building: default.size.stdout
+Finished building: f103c8.hex
+ 
+Finished building: f103c8.list
+Finished building: f103c8.bin
+ 
+ 
+ 
+21:14:46 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12072	     20	   8404	  20496	   5010	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.bin
+Finished building: f103c8.hex
+Finished building: f103c8.list
+ 
+ 
+ 
+21:16:32 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12072	     20	   8404	  20496	   5010	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.bin
+Finished building: f103c8.hex
+Finished building: f103c8.list
+ 
+ 
+ 
+21:16:57 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12072	     20	   8404	  20496	   5010	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.bin
+Finished building: f103c8.hex
+ 
+ 
+Finished building: f103c8.list
+ 
+21:18:30 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12072	     20	   8404	  20496	   5010	f103c8.elf
+Finished building: default.size.stdout
+ 
+21:26:37 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13296	     20	   8412	  21728	   54e0	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+Finished building: f103c8.list
+ 
+ 
+ 
+21:27:03 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13304	     20	   8412	  21736	   54e8	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+Finished building: f103c8.list
+ 
+ 
+ 
+21:31:18 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13304	     20	   8412	  21736	   54e8	f103c8.elf
+Finished building: default.size.stdout
+ 
+21:38:46 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13304	     20	   8412	  21736	   54e8	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+ 
+ 
+Finished building: f103c8.list
+ 
+22:07:15 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13304	     20	   8412	  21736	   54e8	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.bin
+Finished building: f103c8.hex
+ 
+ 
+Finished building: f103c8.list
+ 
+22:08:30 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13304	     20	   8412	  21736	   54e8	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+Finished building: f103c8.list
+ 
+ 
+ 
+23:08:18 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13320	     20	   8412	  21752	   54f8	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+Finished building: f103c8.list
+ 
+ 
+ 
+23:08:31 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13320	     20	   8412	  21752	   54f8	f103c8.elf
+Finished building: default.size.stdout
+ 
+23:08:46 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13320	     20	   8412	  21752	   54f8	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+ 
+ 
+Finished building: f103c8.list
+ 
+23:09:23 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13320	     20	   8412	  21752	   54f8	f103c8.elf
+Finished building: default.size.stdout
+ 
+23:14:48 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13316	     20	   8412	  21748	   54f4	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+ 
+ 
+Finished building: f103c8.list
+ 
+23:22:51 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13316	     20	   8412	  21748	   54f4	f103c8.elf
+Finished building: default.size.stdout
+Finished building: f103c8.bin
+ 
+Finished building: f103c8.hex
+Finished building: f103c8.list
+ 
+ 
+ 
+23:23:29 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13316	     20	   8412	  21748	   54f4	f103c8.elf
+Finished building: default.size.stdout
+ 
+23:24:17 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13316	     20	   8412	  21748	   54f4	f103c8.elf
+Finished building: default.size.stdout
+ 
+23:27:27 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13312	     20	   8412	  21744	   54f0	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+ 
+ 
+Finished building: f103c8.list
+ 
+23:27:59 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13312	     20	   8412	  21744	   54f0	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+Finished building: f103c8.list
+ 
+ 
+ 
+23:28:49 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13312	     20	   8412	  21744	   54f0	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.list
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+ 
+ 
+ 
+23:39:45 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Src/main.c:845:5: warning: implicit declaration of function 'uart_sequence'; did you mean 'run_led_sequence'? [-Wimplicit-function-declaration]
+     uart_sequence(rcvData[0])
+     ^~~~~~~~~~~~~
+     run_led_sequence
+../Src/main.c:854:4: error: expected ';' before '}' token
+    }
+    ^
+../Src/main.c: At top level:
+../Src/main.c:897:6: warning: conflicting types for 'uart_sequence'
+ void uart_sequence(uint8_t data)
+      ^~~~~~~~~~~~~
+../Src/main.c:845:5: note: previous implicit declaration of 'uart_sequence' was here
+     uart_sequence(rcvData[0])
+     ^~~~~~~~~~~~~
+make: *** [Src/subdir.mk:36: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+23:40:02 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Src/main.c:856:4: error: expected ';' before '}' token
+    }
+    ^
+make: *** [Src/subdir.mk:36: Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+23:40:16 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13456	     20	   8412	  21888	   5580	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+ 
+Finished building: f103c8.list
+ 
+ 
+23:40:30 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13456	     20	   8412	  21888	   5580	f103c8.elf
+Finished building: default.size.stdout
+ 
+23:42:20 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13460	     20	   8412	  21892	   5584	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.bin
+Finished building: f103c8.hex
+Finished building: f103c8.list
+ 
+ 
+ 
+23:59:55 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13460	     20	   8412	  21892	   5584	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.bin
+Finished building: f103c8.hex
+ 
+ 
+Finished building: f103c8.list
+ 
+00:00:38 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13152	     20	   8420	  21592	   5458	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+Finished building: f103c8.list
+ 
+ 
+ 
+00:01:19 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "f103c8.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\kwansoo\Desktop\workspace\tuk-tak\neopixel\stm32cubeide\f103c8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="f103c8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: f103c8.elf
+ 
+arm-none-eabi-objdump -h -S  f103c8.elf  > "f103c8.list"
+arm-none-eabi-objcopy  -O ihex  f103c8.elf  "f103c8.hex"
+arm-none-eabi-objcopy  -O binary  f103c8.elf  "f103c8.bin"
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13152	     20	   8420	  21592	   5458	f103c8.elf
+Finished building: default.size.stdout
+ 
+Finished building: f103c8.hex
+Finished building: f103c8.bin
+Finished building: f103c8.list
+ 
+ 
+ 
+00:02:49 **** Incremental Build of configuration Debug for project f103c8 ****
+make -j4 all 
+arm-none-eabi-size   f103c8.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13152	     20	   8420	  21592	   5458	f103c8.elf
+Finished building: default.size.stdout
+ 
